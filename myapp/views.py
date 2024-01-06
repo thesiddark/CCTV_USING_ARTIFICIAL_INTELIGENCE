@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from myapp.models import *
+
 
 def login(request):
     return render(request,'LOGIN.html')
@@ -8,7 +10,19 @@ def login(request):
 def login_post(request):
     username=request.POST['username']
     password=request.POST['password']
-    return HttpResponse("ok")
+    abc=Login.objects.filter( username=username,password=password)
+    if abc.exists():
+        abcd = Login.objects.filter(username=username, password=password)
+        request.session["lid"]=abcd.id
+        if abcd.type == 'admin':
+            return HttpResponse('''<script>alert("Welcome Admin Home");window.location='/myapp/'</script>''')
+        elif abcd.type == 'police':
+            return HttpResponse('''<script>alert("Welcome Police Home");window.location='/myapp/'</script>''')
+        else:
+            return HttpResponse('''<script>alert("Invalid");window.location='/myapp/login/'</script>''')
+    else:
+        return HttpResponse('''<script>alert("Invalid");window.location='/myapp/login/'</script>''')
+
 
 def admin_add_police(request):
     return render(request,'ADMIN/admin add police.html')
