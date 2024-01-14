@@ -3,6 +3,9 @@ from django.shortcuts import render
 
 from myapp.models import *
 
+def admin_home(request):
+    return render(request,'ADMIN/admin homepage.html')
+
 
 def login(request):
     return render(request,'LOGIN.html')
@@ -12,12 +15,12 @@ def login_post(request):
     password=request.POST['password']
     abc=Login.objects.filter( username=username,password=password)
     if abc.exists():
-        abcd = Login.objects.filter(username=username, password=password)
+        abcd = Login.objects.get(username=username, password=password)
         request.session["lid"]=abcd.id
         if abcd.type == 'admin':
-            return HttpResponse('''<script>alert("Welcome Admin Home");window.location='/myapp/'</script>''')
+            return HttpResponse('''<script>alert("Welcome Admin Home");window.location='/myapp/homepage/'</script>''')
         elif abcd.type == 'police':
-            return HttpResponse('''<script>alert("Welcome Police Home");window.location='/myapp/'</script>''')
+            return HttpResponse('''<script>alert("Welcome Police Home");window.location='/myapp/homepage/'</script>''')
         else:
             return HttpResponse('''<script>alert("Invalid");window.location='/myapp/login/'</script>''')
     else:
@@ -29,27 +32,58 @@ def admin_add_police(request):
 
 def admin_add_police_post(request):
     stationname=request.POST['station name']
-    siname=request.POST['si name']
+    siname=request.POST['siname']
     place=request.POST['PLACE']
     post=request.POST['post']
     pin=request.POST['pin']
     emailid=request.POST['email id']
     phone=request.POST['phone']
     district= request.POST['district']
+
+
+    log=Login()
+    log.username=emailid
+    log.password=phone
+    log.type='police'
+    log.save()
+
+    pol=Police_Station()
+    pol.station_name=stationname
+    pol.SI_name=siname
+    pol.place=place
+    pol.post=post
+    pol.pin=pin
+    pol.email_id=emailid
+    pol.district=district
+    pol.phone=phone
+    pol.LOGIN=log
+    pol.save()
+
     return HttpResponse("ok")
 
 def admin_change_password(request):
    return render(request,'ADMIN/admin change password.html')
 
-def admin_change_password_POST(request):
+def admin_change_password_post(request):
     currentpassword = request.POST['currentpassword']
     newpassword=request.POST['newpassword']
     confirmpassword=request.POST['confirmpassword']
-    return HttpResponse("ok")
+
+    abc=Login.objects.filter(password=currentpassword,id=request.session['lid'])
+    if abc.exists():
+        if newpassword==confirmpassword:
+            abc = Login.objects.filter(password=currentpassword, id=request.session['lid']).update(password=confirmpassword)
+            return HttpResponse('''<script>alert("success");window.location='/myapp/login/'</script>''')
+        else:
+            return HttpResponse('''<script>alert("Invalid");window.location='/myapp/admin_change_password/'</script>''')
+    else:
+        return HttpResponse('''<script>alert("Invalid");window.location='/myapp/admin_change_password/'</script>''')
+
 
 
 def admin_complaints(request):
-   return render(request,'ADMIN/admin complaints.html')
+    var = Complaints.objects.all()
+    return render(request,'ADMIN/admin complaints.html',{'data':var})
 
 def admin_complaints_post(request):
     fromdate=request.POST['from']
@@ -69,7 +103,8 @@ def admin_edit_police_post(request):
     return HttpResponse("ok")
 
 def admin_suspicious_activity(request):
-   return render(request,'ADMIN/admin suspicious activity.html')
+    var = SuspiciousActivities.objects.all()
+    return render(request,'ADMIN/admin suspicious activity.html',{'data':var})
 
 def admin_suspicious_activity_post(request):
     fromdate = request.POST['from']
@@ -77,7 +112,8 @@ def admin_suspicious_activity_post(request):
     return render(request, 'ADMIN/admin suspicious activity.html')
 
 def admin_view_appreviews(request):
-   return render(request,'ADMIN/admin view AppReviews.html')
+    var = review.objects.all()
+    return render(request,'ADMIN/admin view AppReviews.html')
 
 def admin_view_appreviews_post(request):
     fromdate = request.POST['from']
@@ -85,21 +121,24 @@ def admin_view_appreviews_post(request):
     return render(request, 'ADMIN/admin view AppReviews.html')
 
 def admin_view_criminals(request):
-   return render(request,'ADMIN/admin view criminals.html')
+    var = Criminals.objects.all()
+    return render(request,'ADMIN/admin view criminals.html',{'data':var})
 
 def admin_view_criminals_post(request):
     name=request.POST['textfield']
     return render(request, 'ADMIN/admin view criminals.html')
 
 def admin_view_police(request):
-   return render(request,'ADMIN/admin view police.html')
+    var=Police_Station.objects.all()
+    return render(request,'ADMIN/admin view police.html',{'data':var})
 
 def admin_view_police_post(request):
     search = request.POST['name']
     return render(request, 'ADMIN/admin view police.html')
 
 def admin_view_registered_users(request):
-   return render(request,'ADMIN/admin view registered users.html')
+    var = User.objects.all()
+    return render(request,'ADMIN/admin view registered users.html',{'data':var})
 
 def admin_view_registered_users_post(request):
     search = request.POST['name']
@@ -129,6 +168,7 @@ def user_chat_post(request):
     return HttpResponse("ok")
 
 def user_review(request):
+    
    return render(request,'user/user review.html')
 def user_review_post(request):
     review = request.POST['review']

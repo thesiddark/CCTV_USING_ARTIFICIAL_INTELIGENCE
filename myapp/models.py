@@ -74,7 +74,7 @@ class review(models.Model):
 
 class Chat(models.Model):
     date = models.BigIntegerField()
-    FROM_ID= models.ForeignKey(Login, on_delete=models.CASCADE,related_name='from_id')
+    FROM_ID = models.ForeignKey(Login, on_delete=models.CASCADE,related_name='from_id')
     TO_ID = models.ForeignKey(Login, on_delete=models.CASCADE,related_name='to_id')
     message= models.CharField(max_length=100)
 

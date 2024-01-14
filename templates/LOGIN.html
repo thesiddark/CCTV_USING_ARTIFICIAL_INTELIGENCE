@@ -6,7 +6,8 @@
 </head>
 
 <body>
-<form id="form1" name="form1" method="post" action="">
+<form id="form1" name="form1" method="post" action="/myapp/login_post/">
+    {% csrf_token %}
   <table width="377" border="1" align="center">
     <tr>
       <td>USERNAME</td>

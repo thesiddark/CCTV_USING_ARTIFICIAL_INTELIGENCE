@@ -27,12 +27,15 @@
     <td>STATUS</td>
     <td>REPLY</td>
   </tr>
+    {% for i in data %}
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td></td>
-    <td></td>
+    <td>{{forloop.counter  }}&nbsp;</td>
+    <td>&nbsp;{{ i.date }}</td>
+    <td>{{ i.complaint }}</td>
+    <td>{{ i.status }}</td>
+      <td>{{ i.reply }}</td>
   </tr>
+    {% endfor %}
 </table>
 </form
 ></body>

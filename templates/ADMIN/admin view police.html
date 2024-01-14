@@ -27,18 +27,20 @@
         <td>&nbsp;</td>
 
   </tr>
+        {% for i in data %}
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>{{forloop.counter}}</td>
+    <td>&nbsp;{{ i.station_name }}</td>
+    <td>{{i.SI_name  }}</td>
+    <td>{{ i.place }}</td>
+    <td>{{ i.email_id }}</td>
+    <td>{{ i.phone }}</td>
         <td><a href="#">Edit</a></td>
 
     <td><a href="#">Delete</a></td>
 
   </tr>
+    {% endfor %}
 </table>
 
 </form>

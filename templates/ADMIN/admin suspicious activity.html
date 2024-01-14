@@ -27,15 +27,17 @@
     <td>criminal info</td>
     <td>activity</td>
   </tr>
+    {% for i in data %}
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td>{{forloop.counter  }}</td>
+    <td>{{ i.date }}</td>
+    <td>&nbsp;{{ i.place }}</td>
+    <td>&nbsp;{{ i.time }}</td>
+    <td>{{ i.photo }}</td>
+    <td>{{ i.CRIMINAL }}</td>
+    <td>{{ i.activity }}</td>
   </tr>
+    {% endfor %}
 </table>
 
 </form>

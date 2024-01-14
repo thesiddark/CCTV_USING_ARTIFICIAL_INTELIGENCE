@@ -26,11 +26,13 @@
     <td>REVIEWS</td>
     <td>RATING</td>
   </tr>
+    {% for i in data %}
   <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td></td>
-    <td></td>
+    <td>{{forloop.counter  }}</td>
+    <td>{{ i.date  }}</td>
+    <td>{{ i.review }}</td>
+    <td>{{ i.rating }}</td>
+      {% endfor %}
   </tr>
 </table>
 </form
