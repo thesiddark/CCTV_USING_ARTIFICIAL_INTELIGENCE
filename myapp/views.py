@@ -113,7 +113,7 @@ def admin_suspicious_activity_post(request):
 
 def admin_view_appreviews(request):
     var = review.objects.all()
-    return render(request,'ADMIN/admin view AppReviews.html')
+    return render(request,'ADMIN/admin view AppReviews.html',{'data':var})
 
 def admin_view_appreviews_post(request):
     fromdate = request.POST['from']
