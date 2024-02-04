@@ -59,7 +59,7 @@ def admin_add_police_post(request):
     pol.LOGIN=log
     pol.save()
 
-    return HttpResponse("ok")
+    return HttpResponse('''<script>alert("Police Added");window.location="/myapp/homepage/"</script>''')
 
 def admin_change_password(request):
    return render(request,'ADMIN/admin change password.html')
@@ -90,8 +90,9 @@ def admin_complaints_post(request):
     todate = request.POST['to']
     return render(request, 'ADMIN/admin complaints.html')
 
-def admin_edit_police(request):
-   return render(request,'ADMIN/admin edit police.html')
+def admin_edit_police(request,id):
+    res=Police_Station.objects.get(id=id)
+    return render(request,'ADMIN/admin edit police.html',{'data':res})
 
 def admin_edit_police_post(request):
     stationname=request.POST['station']
@@ -99,8 +100,22 @@ def admin_edit_police_post(request):
     place = request.POST['place']
     post = request.POST['post']
     pin = request.POST['pin']
-    emailid = request.POST['email id']
-    return HttpResponse("ok")
+    phone= request.POST['phone']
+    district = request.POST['district']
+    emailid = request.POST['emailid']
+    id=request.POST['id']
+
+    obj=Police_Station.objects.get(id=id)
+    obj.station_name=stationname
+    obj.SI_name=siname
+    obj.place=place
+    obj.post=post
+    obj.pin=pin
+    obj.email_id=emailid
+    obj.district=district
+    obj.phone=phone
+    obj.save()
+    return HttpResponse('''<script>alert("edited");window.location='/myapp/view_police/'</script>''')
 
 def admin_suspicious_activity(request):
     var = SuspiciousActivities.objects.all()
@@ -125,8 +140,9 @@ def admin_view_criminals(request):
     return render(request,'ADMIN/admin view criminals.html',{'data':var})
 
 def admin_view_criminals_post(request):
-    name=request.POST['textfield']
-    return render(request, 'ADMIN/admin view criminals.html')
+    search=request.POST['textfield']
+    var = Criminals.objects.filter(name__icontains=search)
+    return render(request, 'ADMIN/admin view criminals.html',{'data':var})
 
 def admin_view_police(request):
     var=Police_Station.objects.all()
@@ -134,7 +150,13 @@ def admin_view_police(request):
 
 def admin_view_police_post(request):
     search = request.POST['name']
-    return render(request, 'ADMIN/admin view police.html')
+    var = Police_Station.objects.filter(station_name__icontains=search)
+    return render(request, 'ADMIN/admin view police.html', {'data': var})
+def admin_delete_police(request,id):
+    data=Police_Station.objects.get(id=id)
+    data.delete()
+    return HttpResponse('''<script>alert("deleted");window.location="/myapp/view_police/"</script>''')
+
 
 def admin_view_registered_users(request):
     var = User.objects.all()
@@ -142,7 +164,8 @@ def admin_view_registered_users(request):
 
 def admin_view_registered_users_post(request):
     search = request.POST['name']
-    return render(request, 'ADMIN/admin view registered users.html')
+    var = User.objects.filter(name__icontains=search)
+    return render(request, 'ADMIN/admin view registered users.html',{'data': var})
 
 #users
 
@@ -155,7 +178,7 @@ def user_add_family_members_post(request):
     relation = request.POST['relation']
     place = request.POST['place']
     phone = request.POST['phone']
-    emailid = request.POST['emailid']
+    emailid = request.POST['email_id']
     return HttpResponse("ok")
 
 def user_chat(request):

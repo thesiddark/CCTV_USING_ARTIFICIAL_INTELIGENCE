@@ -5,49 +5,51 @@
 <title>Untitled Document</title>
 </head>
 
-<body><form action="" method="post"><table width="416" height="346" border="1" align="center">
+<body><form action="/myapp/edit_police_post/" method="post"><table width="416" height="346" border="1" align="center">
   <tr>
+      {% csrf_token %}
+      <input type="hidden" name="id" value="{{ data.id }}"/>
     <td>station name</td>
     <td><label for="textfield"></label>
-      <input type="text" name="station" id="textfield" /></td>
+      <input type="text" name="station" id="textfield" value="{{ data.station_name }}" /></td>
   </tr>
   <tr>
     <td>SI name </td>
     <td><label for="textfield2"></label>
-      <input type="text" name="siname" id="textfield2" /></td>
+      <input type="text" name="siname" id="textfield2" value="{{ data.SI_name }}" /></td>
   </tr>
   <tr>
     <td>place </td>
     <td><label for="textfield3"></label>
-      <input type="text" name="place" id="textfield3" /></td>
+      <input type="text" name="place" id="textfield3" value="{{ data.place }}" /> </td>
   </tr>
   <tr>
     <td>post </td>
     <td><label for="textfield4"></label>
-      <input type="text" name="post" id="textfield4" /></td>
+      <input type="text" name="post" id="textfield4" value="{{ data.post }}" /></td>
   </tr>
   <tr>
     <td>pin</td>
     <td><label for="textfield5"></label>
-      <input type="text" name="pin" id="textfield5" /></td>
+      <input type="text" name="pin" id="textfield5" value="{{ data.pin }}"/></td>
   </tr>
   <tr>
     <td>Email ID</td>
-    <td><label for="textfield6"></label>
-      <input type="text" name="email id" id="textfield6" /></td>
+    <td><label for="textfield6"> </label>
+      <input type="text" name="email_id" id="email_id" value="{{ data.email_id }}"/></td>
   </tr>
   <tr>
     <td>phone </td>
     <td><label for="textfield7"></label>
-      <input type="text" name="textfield7" id="textfield7" /></td>
+      <input type="text" name="phone" id="phone" value="{{ data.phone }}" /></td>
   </tr>
   <tr>
     <td>district</td>
     <td><label for="textfield8"></label>
-      <input type="text" name="textfield8" id="textfield8" /></td>
+      <input type="text" name="district" id="district" value="{{ data.district }}" /></td>
   </tr>
   <tr>
-    <td colspan="2"><input type="button" name="button" id="button" value="Edit" /></td>
+    <td colspan="2"><input type="submit" name="button" id="button" value="Edit" /></td>
     </tr>
 </table>
 </form>

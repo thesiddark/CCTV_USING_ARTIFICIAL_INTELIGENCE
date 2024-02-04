@@ -6,8 +6,9 @@
 </head>
 
 <body>
-<form id="form1" name="form1" method="post" action=""><table width="200" border="1">
+<form id="form1" name="form1" method="post" action="/myapp/view_criminals_post/"><table width="200" border="1">
   <tr>
+      {% csrf_token %}
     <td>name</td>
     <td><label for="textfield"></label>
       <input type="text" name="textfield" id="textfield" /></td>
@@ -25,7 +26,7 @@
   <tr>
     <td>{{forloop.counter  }}</td>
     <td>{{ i.photo }}</td>
-    <td>{{ i.details }}</td>
+    <td>{{ i.name }}<br>{{ i.details }}<br>{{ i.place }}<br>{{i.pin }}<br>{{ i.district }}</td>
       {% endfor %}
   </tr>
   </table>

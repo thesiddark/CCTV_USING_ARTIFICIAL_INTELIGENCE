@@ -14,7 +14,7 @@ urlpatterns = [
     path('changepassword_post/',views.admin_change_password_post),
     path('complaints/',views.admin_complaints),
     path('complaints_post/',views.admin_complaints_post),
-    path('edit_police/',views.admin_edit_police),
+    path('edit_police/<id>',views.admin_edit_police),
     path('edit_police_post/',views.admin_edit_police_post),
     path('suspicious_activity/',views.admin_suspicious_activity),
     path('suspicious_activity_post/',views.admin_suspicious_activity_post),
@@ -23,7 +23,8 @@ urlpatterns = [
     path('view_criminals/',views.admin_view_criminals),
     path('view_criminals_post/',views.admin_view_criminals_post),
     path('view_police/', views.admin_view_police),
-    path('view_police_post/', views.admin_view_police_post),
+    path('admin_view_police_post/', views.admin_view_police_post),
+    path('admin_delete_police/<id>',views.admin_delete_police),
     path('registered_users/',views.admin_view_registered_users),
     path('registered_users_post/',views.admin_view_registered_users_post),
     #users
