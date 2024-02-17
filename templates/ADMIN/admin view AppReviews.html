@@ -4,25 +4,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 </head>
-
+{% extends 'ADMIN/Admin_index.html' %}
+{% block body %}
 <body>
-<form id="form1" name="form1" method="post" action="">
-<table width="509" height="57" border="1">
+<form id="form1" name="form1" method="post" action="/myapp/admin_view_appreviews_post/">
+{% csrf_token %}
+<table class="pull-left">
   <tr>
-    <td width="100">From Date</td>
-    <td width="199"><label for="textfield"></label>
-      <input type="text" name="from" id="textfield" /></td>
-    <td width="63">To date</td>
-    <td width="199"><label for="to"></label>
-      <input type="text" name="textfield2" id="textfield2" /></td>
-        <td width="57"><input type="submit" name="button" id="button" value="search" /></td>
+    <td>From Date</td>
+    <td>
+      <input type="date" name="from" id="textfield" class="form-control"/></td>
+    <td>To date</td>
+    <td>
+      <input type="date" name="to" id="textfield2"class="form-control" /></td>
+        <td><input type="submit" name="button" id="button" value="search" class="btn btn-success" /></td>
 
   </tr>
 </table>
-<table width="838" height="227" border="1">
+    <table class="table table-bordered">
   <tr>
     <td>SI NO</td>
     <td>DATE</td>
+    <td>USER</td>
     <td>REVIEWS</td>
     <td>RATING</td>
   </tr>
@@ -30,11 +33,13 @@
   <tr>
     <td>{{forloop.counter  }}</td>
     <td>{{ i.date  }}</td>
+    <td>{{ i.USER.name  }}</td>
     <td>{{ i.review }}</td>
     <td>{{ i.rating }}</td>
       {% endfor %}
   </tr>
 </table>
-</form
-></body>
+</form>
+</body>
+{% endblock %}
 </html>

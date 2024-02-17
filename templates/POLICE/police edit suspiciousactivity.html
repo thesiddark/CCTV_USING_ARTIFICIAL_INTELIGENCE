@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<form action="/myapp/police_edit_suspicious_activity_post/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<input type="hidden" name="id" value="{{ data2.id }}"/>
+<table width="495" border="1">
+  <tr>
+    <th width="59" scope="row">Criminal</th>
+      <td width="411"><select name="cr">
+          {% for i in data %}
+          <option value="{{ i.id }}">{{ i.name }}</option>
+          {% endfor %}
+      </select></td>
+  </tr>
+ <tr>
+    <th width="59" scope="row">Date</th>
+    <td width="411"><input name="date" type="date" value="{{ data2.date | date:'Y-m-d' }}"/></td>
+  </tr>
+ <tr>
+    <th width="59" scope="row">Time</th>
+    <td width="411"><input name="time" type="text" value="{{ data2.time }}"/></td>
+  </tr>
+     <tr>
+    <th width="59" scope="row">Place</th>
+    <td width="411"><input name="place" type="text" value="{{ data2.place }}"/></td>
+  </tr>
+
+
+
+  <tr>
+    <th scope="row">Photo</th>
+    <td><img src="{{ data2.photo }}" height="60px" width="60px"> <input name="photo" type="file" /></td>
+  </tr>
+
+  <tr>
+    <th scope="row">Activity</th>
+    <td><label for="details"></label>
+      <textarea name="activity" id="details" cols="45" rows="5">{{ data2.activity }}</textarea></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td><input name="add" type="submit" value="Add" /></td>
+
+  </tr>
+</table>
+
+
+</form>
+</body>
+</html>

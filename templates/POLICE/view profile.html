@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% extends 'POLICE/Police_index.html' %}
+{% block body %}
+<body>
+<form>
+    <table class="table table-bordered">
+        <tr>
+            <td>Police Station Name</td>
+            <td>{{ data.station_name }}</td>
+        </tr>
+         <tr>
+            <td>SI Name</td>
+            <td>{{ data.SI_name }}</td>
+        </tr>
+         <tr>
+            <td>Place</td>
+            <td>{{ data.place }}</td>
+        </tr>
+         <tr>
+            <td>Post</td>
+            <td>{{ data.post }}</td>
+        </tr>
+         <tr>
+            <td>Pin</td>
+            <td>{{ data.pin }}</td>
+        </tr>
+         <tr>
+            <td>District</td>
+            <td>{{ data.district }}</td>
+        </tr>
+         <tr>
+            <td>Email</td>
+            <td>{{ data.email_id }}</td>
+        </tr>
+         <tr>
+            <td>Phone</td>
+            <td>{{ data.phone }}</td>
+        </tr>
+    </table>
+</form>
+</body>
+{% endblock %}
+</html>

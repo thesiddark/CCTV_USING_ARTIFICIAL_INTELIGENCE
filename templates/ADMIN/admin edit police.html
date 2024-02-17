@@ -4,54 +4,56 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 </head>
-
-<body><form action="/myapp/edit_police_post/" method="post"><table width="416" height="346" border="1" align="center">
+{% extends 'ADMIN/Admin_index.html' %}
+{% block body %}
+<body><form action="/myapp/edit_police_post/" method="post">
+    <table class="table table-bordered">
   <tr>
       {% csrf_token %}
       <input type="hidden" name="id" value="{{ data.id }}"/>
     <td>station name</td>
-    <td><label for="textfield"></label>
-      <input type="text" name="station" id="textfield" value="{{ data.station_name }}" /></td>
+    <td>
+      <input type="text" name="station" id="textfield" value="{{ data.station_name }}" class="form-control" required/></td>
   </tr>
   <tr>
     <td>SI name </td>
-    <td><label for="textfield2"></label>
-      <input type="text" name="siname" id="textfield2" value="{{ data.SI_name }}" /></td>
+    <td>
+      <input type="text" name="siname" id="textfield2" value="{{ data.SI_name }}" class="form-control"required/></td>
   </tr>
   <tr>
     <td>place </td>
-    <td><label for="textfield3"></label>
-      <input type="text" name="place" id="textfield3" value="{{ data.place }}" /> </td>
+    <td>
+      <input type="text" name="place" id="textfield3" value="{{ data.place }}" class="form-control"required/> </td>
   </tr>
   <tr>
     <td>post </td>
-    <td><label for="textfield4"></label>
-      <input type="text" name="post" id="textfield4" value="{{ data.post }}" /></td>
+    <td>
+      <input type="text" name="post" id="textfield4" value="{{ data.post }}" class="form-control"required/></td>
   </tr>
   <tr>
     <td>pin</td>
-    <td><label for="textfield5"></label>
-      <input type="text" name="pin" id="textfield5" value="{{ data.pin }}"/></td>
+    <td>
+      <input type="text" name="pin" id="textfield5" value="{{ data.pin }}"class="form-control"required/></td>
   </tr>
   <tr>
     <td>Email ID</td>
-    <td><label for="textfield6"> </label>
-      <input type="text" name="email_id" id="email_id" value="{{ data.email_id }}"/></td>
+    <td>
+      <input type="text" name="email_id" id="email_id" value="{{ data.email_id }}" class="form-control"required/></td>
   </tr>
   <tr>
     <td>phone </td>
     <td><label for="textfield7"></label>
-      <input type="text" name="phone" id="phone" value="{{ data.phone }}" /></td>
+      <input type="text" name="phone" id="phone" value="{{ data.phone }}" class="form-control"required/></td>
   </tr>
   <tr>
     <td>district</td>
     <td><label for="textfield8"></label>
-      <input type="text" name="district" id="district" value="{{ data.district }}" /></td>
+      <input type="text" name="district" id="district" value="{{ data.district }}" class="form-control"required/></td>
   </tr>
   <tr>
-    <td colspan="2"><input type="submit" name="button" id="button" value="Edit" /></td>
+    <td colspan="2"><input type="submit" name="button" id="button" value="Edit" class="btn btn-info" /></td>
     </tr>
 </table>
 </form>
-</body>
+</body>{% endblock %}
 </html>

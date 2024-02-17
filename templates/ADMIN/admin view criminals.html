@@ -4,32 +4,41 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 </head>
-
+{% extends 'ADMIN/Admin_index.html' %}
+{% block body %}
 <body>
-<form id="form1" name="form1" method="post" action="/myapp/view_criminals_post/"><table width="200" border="1">
+<form id="form1" name="form1" method="post" action="/myapp/view_criminals_post/">
+    <table class="pull-left">
   <tr>
       {% csrf_token %}
     <td>name</td>
-    <td><label for="textfield"></label>
-      <input type="text" name="textfield" id="textfield" /></td>
-    <td><input type="submit" name="button" id="button" value="GO" /></td>
+    <td>
+      <input type="text" name="textfield" id="textfield" class="form-control"/></td>
+    <td><input type="submit" name="button" id="button" value="GO" class="btn btn-success"/></td>
   </tr>
 </table>
-  <table width="751" height="203" border="1">
+    <table class="table table-bordered">
   <tr></tr>
   <tr>
     <td>sn no</td>
-    <td>photo</td>
+    <td>photo1</td>
+    <td>photo2</td>
+    <td>photo3</td>
     <td>details</td>
+    <td>Criminal</td>
   </tr>
        {% for i in data %}
   <tr>
     <td>{{forloop.counter  }}</td>
-    <td>{{ i.photo }}</td>
-    <td>{{ i.name }}<br>{{ i.details }}<br>{{ i.place }}<br>{{i.pin }}<br>{{ i.district }}</td>
+    <td><img src="{{ i.photo }}"height="60px" width="60px"> </td>
+    <td><img src="{{ i.photo1 }}"height="60px" width="60px"> </td>
+    <td><img src="{{ i.photo2 }}"height="60px" width="60px"> </td>
+           <td>{{ i.details }}</td>
+    <td>{{ i.name }}<br>{{ i.place }}<br>{{i.pin }}<br>{{ i.district }}</td>
       {% endfor %}
   </tr>
   </table>
 </form>
 </body>
+{% endblock %}
 </html>

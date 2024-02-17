@@ -4,26 +4,61 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 </head>
-
+{% extends 'POLICE/Police_index.html' %}
+{% block body %}
 <body>
-<form action="" method="post">
-<table width="495" border="1">
+<form action="/myapp/police_add_criminals_post/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table class="table table-bordered">
   <tr>
-    <th width="59" scope="row">Name</th>
-    <td width="411"><input name="name" type="text" /></td>
+    <th>Name</th>
+    <td><input name="name" type="text" class="form-control" required/></td>
+  </tr>
+
+    <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" value="Male" checked/>Male<br>
+        <input type="radio" name="gender" value="Female">Female<br>
+        <input type="radio" name="gender" value="Other">Other<br>
+        </td>
+    </tr>
+
+     <tr>
+    <th>Place</th>
+    <td><input name="place" type="text"  class="form-control"required/></td>
+  </tr>
+     <tr>
+    <th>Post</th>
+    <td><input name="post" type="text" class="form-control"required /></td>
+  </tr>
+     <tr>
+    <th>Pin</th>
+    <td><input name="pin" type="text" class="form-control"required  pattern="[0-9]{6}" maxlength="6" /></td>
+  </tr>
+     <tr>
+    <th>District</th>
+    <td><input name="district" type="text"  class="form-control"required/></td>
+  </tr>
+
+  <tr>
+    <th>Photo</th>
+    <td><input name="photo" type="file"  class="form-control"required/></td>
+  </tr>
+     <tr>
+    <th>Photo1</th>
+    <td><input name="photo1" type="file"  class="form-control"required/></td>
+  </tr>
+     <tr>
+    <th>Photo2</th>
+    <td><input name="photo2" type="file" class="form-control"required /></td>
   </tr>
   <tr>
-    <th scope="row">Photo</th>
-    <td><input name="photo" type="file" /></td>
+    <th>Details</th>
+    <td>
+      <textarea name="details" id="details" cols="45" rows="5" class="form-control"required></textarea></td>
   </tr>
-  <tr>
-    <th scope="row">Details</th>
-    <td><label for="details"></label>
-      <textarea name="details" id="details" cols="45" rows="5"></textarea></td>
-  </tr>
-  <tr>
-  <td></td>
-  <td><input name="add" type="button" value="Add" /></td>
+  <tr align="center">
+  <td colspan="2"><input name="add" type="submit" value="Add" class="btn btn-info" /></td>
 
   </tr>
 </table>
@@ -31,4 +66,5 @@
 
 </form>
 </body>
+{% endblock %}
 </html>

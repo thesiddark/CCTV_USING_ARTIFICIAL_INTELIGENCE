@@ -4,20 +4,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 </head>
-
+{% extends 'ADMIN/Admin_index.html' %}
+{% block body %}
 <body>
-<form id="form1" name="form1" method="post" action=""><table width="375" border="1">
-  <tr>
-    <td width="49">From</td>
-    <td width="6"><label for="textfield"></label>
+<form id="form1" name="form1" method="post" action="/myapp/admin_suspicious_activity_post/">
+    <table class="pull-left">
+  <tr>{% csrf_token %}
+    <td>From</td>
+    <td>
       <input type="date" name="from" id="textfield" /></td>
-    <td width="21">To</td>
-    <td width="6"><label for="textfield2"></label>
+    <td>To</td>
+    <td>
       <input type="date" name="to" id="textfield2" /></td>
-    <td width="259"><input type="submit" name="button" id="button" value="search" /></td>
+    <td><input type="submit" name="button" id="button" value="search" class="btn btn-success"/></td>
   </tr>
 </table>
-<table width="820" height="267" border="1">
+    <table class="table table-bordered">
   <tr>
     <td>si no </td>
     <td>date </td>
@@ -33,13 +35,13 @@
     <td>{{ i.date }}</td>
     <td>&nbsp;{{ i.place }}</td>
     <td>&nbsp;{{ i.time }}</td>
-    <td>{{ i.photo }}</td>
-    <td>{{ i.CRIMINAL }}</td>
+    <td><img src="{{ i.photo }}"  height="60px" width="60px" alt=""/></td>
+    <td>{{ i.CRIMINAL.name }}</td>
     <td>{{ i.activity }}</td>
   </tr>
     {% endfor %}
 </table>
 
 </form>
-</body>
+</body>{% endblock %}
 </html>

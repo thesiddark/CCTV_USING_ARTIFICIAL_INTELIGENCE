@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+
+{% extends 'POLICE/Police_index.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="/myapp/police_view_registered_users_post/">
+    <table class="pull-left">
+  <tr>
+      {% csrf_token %}
+    <td>
+      <input type="text" name="name" id="textfield" class="form-control"/></td>
+    <td><input type="submit" value="Search" class="btn btn-success"/></td>
+   
+  </tr>
+</table>
+    <table class="table table-bordered">
+  <tr>
+    <td>si no</td>
+    <td> name</td>
+    <td>gender</td>
+    <td>address</td>
+    <td>email</td>
+    <td>phone</td>
+    <td>photo</td>
+      <td></td>
+
+  </tr>
+    {% for i in data %}
+  <tr>
+    <td> {{forloop.counter}}&nbsp;</td>
+    <td>{{ i.name }}</td>
+    <td>{{ i.gender }}</td>
+    <td>{{i.place  }}</td>
+    <td>&nbsp;{{i.email  }}</td>
+    <td>{{i.phone  }}</td>
+      <td><img src="{{ i.photo }}"height="60px" width="60px"> </td>
+  <td><a href="/myapp/chat/{{ i.LOGIN.id }}" class="btn btn-info">Chat</a> </td>
+
+  </tr>
+    {% endfor %}
+</table>
+
+</form>
+</body>
+{% endblock %}
+</html>

@@ -1,0 +1,40 @@
+{% extends 'POLICE/Police_index.html' %}
+{% block body %}
+
+<div class="row">
+        <form class="d-flex" role="search" method="post" action="/myapp/p_search_view_detect_det/#abc">
+        <div class="col-lg-5">
+                 {% csrf_token %}
+              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="fdate">
+        </div>TO
+        <div class="col-lg-5">
+              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate">
+        </div>
+        <div class="col-lg-2">
+          <button class="btn btn-success" type="submit">Search</button>
+        </div><br><br>
+        </form>
+    </div>
+    <table class="table table-striped">
+    <tr>
+        <td>s/no</td>
+        <td>Date</td>
+        <td>Time</td>
+        <td>Criminal</td>
+        <td>Police Station</td>
+
+    </tr>
+    {% for i in data %}
+    <tr>
+        <td>{{ forloop.counter }}</td>
+        <td>{{ i.date }}</td>
+        <td>{{ i.time }}</td>
+        <td><img src="{{ i.CRIMINAL.photo }}" height="100px" width="100px">
+            {{ i.CRIMINAL.name }}
+        </td>
+        <td>{{ i.CRIMINAL.POLICE.station_name }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

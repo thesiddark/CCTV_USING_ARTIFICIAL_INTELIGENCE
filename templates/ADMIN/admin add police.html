@@ -4,54 +4,56 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 </head>
-
+{% extends 'ADMIN/Admin_index.html' %}
+{% block body %}
 <body><form action="/myapp/add_police_post/" method="post">
     {% csrf_token %}
-    <table width="416" height="346" border="1" align="center">
+    <table class="table table-bordered">
   <tr>
     <td>station name </td>
-    <td><label for="textfield"></label>
-      <input type="text" name="station name" id="textfield" /></td>
+    <td>
+      <input type="text" name="station name" id="textfield" class="form-control" required/></td>
   </tr>
   <tr>
     <td>SI name </td>
-    <td><label for="textfield2"></label>
-      <input type="text" name="siname" id="textfield2" /></td>
+    <td>
+      <input type="text" name="siname" id="textfield2" class="form-control" required/></td>
   </tr>
   <tr>
     <td>place </td>
-    <td><label for="textfield3"></label>
-      <input type="text" name="PLACE" id="textfield3" /></td>
+    <td>
+      <input type="text" name="PLACE" id="textfield3"class="form-control" required/></td>
   </tr>
   <tr>
     <td>post</td>
-    <td><label for="textfield4"></label>
-      <input type="text" name="post" id="textfield4" /></td>
+    <td>
+      <input type="text" name="post" id="textfield4" class="form-control"required /></td>
   </tr>
   <tr>
     <td>pin</td>
-    <td><label for="textfield5"></label>
-      <input type="text" name="pin" id="textfield5" /></td>
+    <td>
+      <input type="text" name="pin" id="textfield5" class="form-control" required/></td>
   </tr>
   <tr>
     <td>Email ID</td>
-    <td><label for="textfield6"></label>
-      <input type="text" name="email id" id="textfield6" /></td>
+    <td>
+      <input type="text" name="email id" id="textfield6" class="form-control" required/></td>
   </tr>
   <tr>
     <td>phone </td>
-    <td><label for="textfield7"></label>
-      <input type="text" name="phone" id="textfield7" /></td>
+    <td>
+      <input type="text" name="phone" id="textfield7"class="form-control" required /></td>
   </tr>
   <tr>
     <td>district</td>
-    <td><label for="textfield8"></label>
-      <input type="text" name="district" id="textfield8" /></td>
+    <td>
+      <input type="text" name="district" id="textfield8" class="form-control" required/></td>
   </tr>
-  <tr>
-    <td colspan="2"><input type="submit" name="button" id="button" value="Add" /></td>
+  <tr align="center">
+    <td colspan="2"><input type="submit" name="button" id="button" value="Add" class="btn btn-info" /></td>
     </tr>
 </table>
 </form>
 </body>
+{% endblock %}
 </html>

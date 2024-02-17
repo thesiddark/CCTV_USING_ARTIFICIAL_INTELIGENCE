@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+{% extends 'POLICE/Police_index.html' %}
+{% block body %}
+<body>
+<form action="/myapp/police_edit_criminals_post/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <input type="hidden" name="id" value="{{ data.id }}">
+
+    <table class="table table-bordered">
+  <tr>
+    <th>Name</th>
+    <td><input name="name" type="text" value="{{ data.name }}"  class="form-control"/></td>
+  </tr>
+
+    <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" value="Male" {% if data.gender == 'Male' %}checked{% endif %}/>Male<br>
+        <input type="radio" name="gender" value="Female"{% if data.gender == 'Female' %}checked{% endif %}>Female<br>
+        <input type="radio" name="gender" value="Other"{% if data.gender == 'Other' %}checked{% endif %}>Other<br>
+        </td>
+    </tr>
+
+     <tr>
+    <th>Place</th>
+    <td><input name="place" type="text" value="{{ data.place }}"  class="form-control"/></td>
+  </tr>
+     <tr>
+    <th>Post</th>
+    <td><input name="post" type="text" value="{{ data.post }}" class="form-control"/></td>
+  </tr>
+     <tr>
+    <th>Pin</th>
+    <td><input name="pin" type="text" value="{{ data.pin }}" class="form-control"/></td>
+  </tr>
+     <tr>
+    <th>District</th>
+    <td><input name="district" type="text"value="{{ data.district }}"  class="form-control"/></td>
+  </tr>
+
+  <tr>
+    <th>Photo</th>
+    <td><img src="{{ data.photo }}"height="60px" width="60px"><input name="photo" type="file" class="form-control" /></td>
+  </tr>
+     <tr>
+    <th scope="row">Photo1</th>
+    <td><img src="{{ data.photo1 }}"height="60px" width="60px"><input name="photo1" type="file"  class="form-control"/></td>
+  </tr>
+     <tr>
+    <th scope="row">Photo2</th>
+    <td><img src="{{ data.photo2 }}"height="60px" width="60px"><input name="photo2" type="file"  class="form-control"/></td>
+  </tr>
+  <tr>
+    <th scope="row">Details</th>
+    <td>
+      <textarea name="details" id="details" cols="45" rows="5"  class="form-control">{{ data.details }}</textarea></td>
+  </tr>
+  <tr align="center">
+  <td colspan="2"><input name="add" type="submit" value="Update" class="btn btn-info" /></td>
+
+  </tr>
+</table>
+
+
+</form>
+</body>
+{% endblock %}
+</html>

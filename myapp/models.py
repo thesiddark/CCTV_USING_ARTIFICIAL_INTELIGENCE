@@ -36,7 +36,7 @@ class User(models.Model):
 
 class Complaints(models.Model):
     USER= models.ForeignKey(User,on_delete=models.CASCADE)
-    date= models.BigIntegerField()
+    date= models.DateField()
     complaint= models.CharField(max_length=100)
     status= models.CharField(max_length=100)
     reply= models.CharField(max_length=100)
@@ -59,24 +59,24 @@ class Criminals(models.Model):
 
 
 class SuspiciousActivities(models.Model):
-    date= models.BigIntegerField()
+    date= models.DateField()
     place= models.CharField(max_length=100)
-    time= models.BigIntegerField()
+    time= models.CharField(max_length=100)
     photo= models.CharField(max_length=500)
     CRIMINAL= models.ForeignKey(Criminals,on_delete=models.CASCADE)
     activity= models.CharField(max_length=100)
 
 class review(models.Model):
-    date= models.BigIntegerField()
+    date= models.DateField()
     review= models.CharField(max_length=100)
     USER= models.ForeignKey(User,on_delete=models.CASCADE)
     rating= models.CharField(max_length=100)
 
 class Chat(models.Model):
-    date = models.BigIntegerField()
-    FROM_ID = models.ForeignKey(Login, on_delete=models.CASCADE,related_name='from_id')
-    TO_ID = models.ForeignKey(Login, on_delete=models.CASCADE,related_name='to_id')
-    message= models.CharField(max_length=100)
+    date = models.DateField()
+    message=models.CharField(max_length=100)
+    FROMID=models.ForeignKey(Login, on_delete=models.CASCADE,related_name="fuser")
+    TOID=models.ForeignKey(Login, on_delete=models.CASCADE,related_name="tuser")
 
 class family(models.Model):
     USER = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -88,8 +88,23 @@ class family(models.Model):
     phone= models.BigIntegerField()
 
 
+#
+#
+# class detect(models.Model):
+#     date=models.DateField()
+#     time=models.CharField(max_length=100)
+#     image= models.CharField(max_length=500)
+#
+#
+#
+#
+# class detect_sub(models.Model):
+#     CRIMINAL = models.ForeignKey(Criminals, on_delete=models.CASCADE)
+#     DETECT = models.ForeignKey(detect, on_delete=models.CASCADE)
 
 
-
-
+class detection(models.Model):
+    date=models.DateField()
+    time=models.CharField(max_length=100)
+    CRIMINAL = models.ForeignKey(Criminals, on_delete=models.CASCADE)
 
