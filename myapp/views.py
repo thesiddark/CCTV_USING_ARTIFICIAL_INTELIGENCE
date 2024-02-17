@@ -192,7 +192,7 @@ def admin_view_appreviews(request):
     var = review.objects.all()
     return render(request,'ADMIN/admin view AppReviews.html',{'data':var})
 
-def admin_view_appreviews_post(request)
+def admin_view_appreviews_post(request):
     if request.session['lid']=='':
         return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
 
