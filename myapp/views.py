@@ -843,6 +843,19 @@ def user_add_family_members_post(request):
     oo.save()
     return JsonResponse({'status': 'ok'})
 
+def user_edit_profile_get(request):
+    fid=request.POST['fid']
+    res=family.objects.get(id=fid)
+    return JsonResponse({'status': 'ok',
+                         'name':res.name,
+                         'photo':res.photo,
+                         'relation':res.relation,
+                         'place':res.place,
+                         'email':res.email_id,
+                         'phone':res.phone
+                         })
+
+
 def user_edit_family_members_post(request):
     fid=request.POST['fid']
     name = request.POST['name']
@@ -860,6 +873,8 @@ def user_edit_family_members_post(request):
         dt = datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')+'.jpg'
         open(settings.MEDIA_ROOT+'\\family\\'+dt, 'wb').write(a)
         oo.photo = '/media/family/'+dt
+        oo.save()
+
     oo.name = name
     oo.phone = phone
     oo.email_id = email_id

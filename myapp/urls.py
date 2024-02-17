@@ -60,6 +60,7 @@ urlpatterns = [
     path('p_search_view_detect_det/',views.p_search_view_detect_det),
     path('view_detect_det/',views.view_detect_det),
     path('search_view_detect_det/',views.search_view_detect_det),
+    path('user_edit_profile_get/',views.user_edit_profile_get),
 
 
 
