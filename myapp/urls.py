@@ -89,7 +89,7 @@ urlpatterns = [
     path('user_edit_family_members_post/', views.user_edit_family_members_post),
     path('delete_family_person/', views.delete_family_person),
     path('send_complaints/', views.send_complaints),
-    path('view_user_reply/', views.view_user_reply),
+    path('user_view_reply/', views.view_user_reply),
     path('send_review/', views.send_review),
     path('user_view_criminals/', views.user_view_criminals),
     path('user_view_policestation/', views.user_view_policestation),

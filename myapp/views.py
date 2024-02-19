@@ -698,7 +698,7 @@ def user_signup(request):
     import base64
     date=datetime.now().strftime('%Y%m%d_%H%M%S%F')
     a=base64.b64decode(photo)
-    fh=open("C:\\Users\\sidha\\OneDrive\\Documents\\Git\\PROJECT\\Aicctv\\media\\user\\"+date+".jpg","wb")
+    fh=open("C:\\Users\\sidharth\\Documents\\GitHub\\Aicctv\\media\\user\\"+date+".jpg","wb")
     path='/media/user/'+date+".jpg"
     fh.write(a)
     fh.close()
@@ -780,7 +780,7 @@ def user_edit_profile(request):
         import base64
         date = datetime.now().strftime('%Y%m%d_%H%M%S%F')
         a = base64.b64decode(photo)
-        fh = open("C:\\Users\\sidha\\OneDrive\\Documents\\Git\\PROJECT\\Aicctv\\media\\user\\" + date + ".jpg", "wb")
+        fh = open("C:\\Users\\sidharth\\Documents\\GitHub\\Aicctv\\media\\user\\" + date + ".jpg", "wb")
         path = '/media/user/' + date + ".jpg"
         fh.write(a)
         fh.close()
