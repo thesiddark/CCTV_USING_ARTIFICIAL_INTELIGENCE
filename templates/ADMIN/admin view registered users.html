@@ -2,30 +2,32 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>REGISTERD USERS</title>
 </head>
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
 <body>
-<form id="form1" name="form1" method="post" action="/myapp/registered_users_post/">
+<div align="center"><div>
+    <h1 style="font-weight: bold; background: linear-gradient(to right, #8d75ff, #4EAEFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">REGISTERED USERS</h1>
+</div><br>
+<form id="form1" name="form1" method="post" action="/myapp/registered_users_post/"><br><br>
     <table class="pull-left">
   <tr>
       {% csrf_token %}
     <td>
       <input type="text" name="name" id="textfield" class="form-control" /></td>
     <td><input type="submit" value="Search" class="btn btn-success"/></td>
-   
   </tr>
 </table>
     <table class="table table-bordered">
   <tr>
-    <td>si no</td>
-    <td> name</td>
-    <td>gender</td>
-    <td>address</td>
-    <td>email</td>
-    <td>phone</td>
-    <td>photo</td>
+    <td>ID</td>
+    <td>NAME</td>
+    <td>GENDER</td>
+    <td>ADDREESS</td>
+    <td>EMAIL</td>
+    <td>PHONE</td>
+    <td>PHOTO</td>
 
   </tr>
     {% for i in data %}
@@ -36,7 +38,7 @@
     <td>{{i.place  }}</td>
     <td>&nbsp;{{i.email  }}</td>
     <td>{{i.phone  }}</td>
-      <td><img src="{{ i.photo }}"height="60px" width="60px"> </td>
+      <td><img src="{{ i.photo }}"height="60px" width="60px" style="border-radius: 8px;"> </td>
 
   </tr>
     {% endfor %}

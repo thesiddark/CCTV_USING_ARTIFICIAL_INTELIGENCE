@@ -2,37 +2,40 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>AICCTV | CRIMINALS </title>
 </head>
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
 <body>
+<div align="center"><div>
+    <h1 style="font-weight: bold; background: linear-gradient(to right, #ffb859, #ff1c26); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">CRIMINAL LIST</h1>
+</div><br>
 <form id="form1" name="form1" method="post" action="/myapp/view_criminals_post/">
     <table class="pull-left">
   <tr>
       {% csrf_token %}
-    <td>name</td>
+    <td>Name</td>
     <td>
       <input type="text" name="textfield" id="textfield" class="form-control"/></td>
-    <td><input type="submit" name="button" id="button" value="GO" class="btn btn-success"/></td>
+    <td><input type="submit" name="button" id="button" value="SEARCH" class="btn btn-success"/></td>
   </tr>
 </table>
     <table class="table table-bordered">
   <tr></tr>
   <tr>
-    <td>sn no</td>
-    <td>photo1</td>
-    <td>photo2</td>
-    <td>photo3</td>
-    <td>details</td>
-    <td>Criminal</td>
+    <td>SN NO</td>
+    <td>PHOTO-1</td>
+    <td>PHOTO-2</td>
+    <td>PHOTO-3</td>
+    <td>DETAILS</td>
+    <td>CRIMINALS</td>
   </tr>
        {% for i in data %}
   <tr>
     <td>{{forloop.counter  }}</td>
-    <td><img src="{{ i.photo }}"height="60px" width="60px"> </td>
-    <td><img src="{{ i.photo1 }}"height="60px" width="60px"> </td>
-    <td><img src="{{ i.photo2 }}"height="60px" width="60px"> </td>
+    <td><img src="{{ i.photo }}"height="60px" width="60px" style="border-radius: 5px;"> </td>
+    <td><img src="{{ i.photo1 }}"height="60px" width="60px" style="border-radius: 5px;"> </td>
+    <td><img src="{{ i.photo2 }}"height="60px" width="60px"  style="border-radius: 5px;"> </td>
            <td>{{ i.details }}</td>
     <td>{{ i.name }}<br>{{ i.place }}<br>{{i.pin }}<br>{{ i.district }}</td>
       {% endfor %}

@@ -2,35 +2,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>POLICE MANGEMENT</title>
+    <link rel="shortcut icon" href="/static/Home/assets/images/logotrans.ico" type="image/x-icon">
+
 </head>
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
 <body><form action="/myapp/add_police_post/" method="post">
     {% csrf_token %}
+    <div align="center"><div><i class="fa-regular fa-handcuffs"></i></div>
+    <h1 style="font-weight: bold; background: linear-gradient(to right, #FF3F1F, #4EAEFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">POLICE STATION REGISTRATION</h1>
+</div><br>
+
     <table class="table table-bordered">
   <tr>
-    <td>station name </td>
+    <td>Station Name </td>
     <td>
       <input type="text" name="station name" id="textfield" class="form-control" required/></td>
   </tr>
   <tr>
-    <td>SI name </td>
+    <td>SI Name </td>
     <td>
       <input type="text" name="siname" id="textfield2" class="form-control" required/></td>
   </tr>
   <tr>
-    <td>place </td>
+    <td>Place </td>
     <td>
       <input type="text" name="PLACE" id="textfield3"class="form-control" required/></td>
   </tr>
   <tr>
-    <td>post</td>
+    <td>Post</td>
     <td>
       <input type="text" name="post" id="textfield4" class="form-control"required /></td>
   </tr>
   <tr>
-    <td>pin</td>
+    <td>Pin</td>
     <td>
       <input type="text" name="pin" id="textfield5" class="form-control" required/></td>
   </tr>
@@ -40,12 +46,12 @@
       <input type="text" name="email id" id="textfield6" class="form-control" required/></td>
   </tr>
   <tr>
-    <td>phone </td>
+    <td>Phone </td>
     <td>
       <input type="text" name="phone" id="textfield7"class="form-control" required /></td>
   </tr>
   <tr>
-    <td>district</td>
+    <td>District</td>
     <td>
       <input type="text" name="district" id="textfield8" class="form-control" required/></td>
   </tr>

@@ -32,7 +32,7 @@
 
 /* BASE - Base tyles, Variables, Mixins, etc. */
 body {
-  background-color: #ffffff;
+  background-image: url('/myapp/static/Home/assets/images/loginpage.jpg');
   font-family: "Roboto", sans-serif;
   color: #333333;
   font-size: 16px;

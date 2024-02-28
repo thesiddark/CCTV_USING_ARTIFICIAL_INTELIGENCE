@@ -170,7 +170,7 @@ def admin_edit_police_post(request):
 
 def admin_suspicious_activity(request):
     if request.session['lid']=='':
-        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+        return HttpResponse('''<script>alert("logouted");window.location='/myapp/login/'</script>''')
 
     var = SuspiciousActivities.objects.all()
     return render(request,'ADMIN/admin suspicious activity.html',{'data':var})

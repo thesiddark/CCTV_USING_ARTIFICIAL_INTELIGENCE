@@ -1,15 +1,20 @@
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
-
+<div align="center"><div>
+    <h1 style="font-weight: bold; background: linear-gradient(to right, #ff570b, #4EAEFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">DETECTED</h1>
+</div><br>
 <div class="row">
         <form class="d-flex" role="search" method="post" action="/myapp/search_view_detect_det/#abc">
-        <div class="col-lg-5">
+
+            <div class="col-lg-5">
                  {% csrf_token %}
+                TO
               <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="fdate">
-        </div>TO
-        <div class="col-lg-5">
-              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate">
         </div>
+        <div class="col-lg-5">
+            FROM
+              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate">
+        </div>.
         <div class="col-lg-2">
           <button class="btn btn-success" type="submit">Search</button>
         </div><br><br>
@@ -17,11 +22,11 @@
     </div>
     <table class="table table-striped">
     <tr>
-        <td>s/no</td>
-        <td>Date</td>
-        <td>Time</td>
-        <td>Criminal</td>
-        <td>Police Station</td>
+        <td>SN No</td>
+        <td>DATE</td>
+        <td>TIME</td>
+        <td>CRIMINALS</td>
+        <td>POLICE STATION</td>
 
     </tr>
     {% for i in data %}
@@ -29,7 +34,7 @@
         <td>{{ forloop.counter }}</td>
         <td>{{ i.date }}</td>
         <td>{{ i.time }}</td>
-        <td><img src="{{ i.CRIMINAL.photo }}" height="100px" width="100px">
+        <td><img src="{{ i.CRIMINAL.photo }}" height="100px" width="100px" style="border-radius: 8px;">
             {{ i.CRIMINAL.name }}
         </td>
         <td>{{ i.CRIMINAL.POLICE.station_name }}</td>
