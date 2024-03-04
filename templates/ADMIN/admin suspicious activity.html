@@ -7,6 +7,11 @@
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
 <body>
+<div align="center">
+    <div>
+        <h1 style="font-weight: bold; background: linear-gradient(to right, #252525, #252525); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0px 0px 0px #000, 0px 0px 0px #252525, 0px 0px 0px #000, 0px 0px 0px #252525;">SUSPICIUS ACTIVITY</h1>
+    </div>
+</div><br>
 <form id="form1" name="form1" method="post" action="/myapp/admin_suspicious_activity_post/">
     <table class="pull-left">
   <tr>{% csrf_token %}
@@ -21,11 +26,11 @@
 </table>
     <table class="table table-bordered">
   <tr>
-    <td>S/N NO</td>
+    <td>SN NO</td>
     <td>DATE</td>
     <td>PLACE</td>
     <td>TIME</td>
-    <td>PHOTO/td>
+    <td>PHOTO</td>
     <td>CRIMINAL INFO/RECORDS</td>
     <td>ACTIVITY</td>
   </tr>

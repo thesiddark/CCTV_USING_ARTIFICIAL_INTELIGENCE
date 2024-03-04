@@ -6,9 +6,10 @@
 </head>
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
-<body>
-<div align="center"><div>
-    <h1 style="font-weight: bold; background: linear-gradient(to right, #799aff, #4EAEFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">COMPLAINTS</h1>
+<body><div align="center">
+    <div>
+        <h1 style="font-weight: bold; background: linear-gradient(to right, #252525, #252525); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0px 0px 0px #000, 0px 0px 0px #252525, 0px 0px 0px #000, 0px 0px 0px #252525;">COMPLAINTS</h1>
+    </div>
 </div><br>
 <form id="form1" name="form1" method="post" action="/myapp/admin_complaints_post/">
 {% csrf_token %}
