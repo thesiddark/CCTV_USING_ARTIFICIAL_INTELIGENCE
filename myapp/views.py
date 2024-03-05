@@ -696,7 +696,7 @@ def user_signup(request):
 
     from datetime import datetime
     import base64
-    date=datetime.now().strftime('%Y%m%d_%H%M%S%F')
+    date=datetime.now().strftime('%Y%m%d-%H%M%S%F')
     a=base64.b64decode(photo)
     fh=open("C:\\Users\\sidharth\\Documents\\GitHub\\Aicctv\\media\\user\\"+date+".jpg","wb")
     path='/media/user/'+date+".jpg"
@@ -778,7 +778,7 @@ def user_edit_profile(request):
 
         from datetime import datetime
         import base64
-        date = datetime.now().strftime('%Y%m%d_%H%M%S%F')
+        date = datetime.now().strftime('%Y%m%d-%H%M%S%F')
         a = base64.b64decode(photo)
         fh = open("C:\\Users\\sidharth\\Documents\\GitHub\\Aicctv\\media\\user\\" + date + ".jpg", "wb")
         path = '/media/user/' + date + ".jpg"
@@ -914,6 +914,7 @@ def view_user_reply(request):
     for i in res:
         l.append({
             'id': i.id,
+            'date':i.date,
             'complaint': i.complaint,
             'reply': i.reply,
             'status': i.status,

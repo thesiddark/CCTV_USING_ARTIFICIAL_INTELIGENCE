@@ -106,5 +106,7 @@ class family(models.Model):
 class detection(models.Model):
     date=models.DateField()
     time=models.CharField(max_length=100)
-    CRIMINAL = models.ForeignKey(Criminals, on_delete=models.CASCADE)
+    name= models.CharField(max_length=100)
+    type= models.CharField(max_length=100)
+    did=models.IntegerField()
 
