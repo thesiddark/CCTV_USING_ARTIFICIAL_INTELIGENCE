@@ -22,34 +22,38 @@ Author URL: http://w3layouts.com
 
 </head>
 
-<body>
-    <div class="w3l-signinform">
+<body>    <div class="w3l-signinform">
 
         <!-- container -->
         <div class="wrapper">
             <!-- main content -->
             <div class="w3l-form-info"><img src="/static/Home/assets/images/logotrans.png" width="100" height="100"/>
                 <div class="w3_info">
-                    <h1>Welcome Back</h1>
-                    <p class="sub-para"></p>
+                    <h1>AI-CCTV</h1>
+                    <h1>Welcome Back,</h1>
                     <h2>LOG IN</h2>
-                    <form action="/myapp/login_post/" method="post">
+                    <p class="sub-para"></p>
+
+                {% if logout_message %}
+                                  <p style="color: orangered;">{{ logout_message }}</p>
+                               {% endif %}
+                    <form action="/myapp/login_post/" method="post" >
                         {% csrf_token %}
-                        <div class="input-group">
+                        <div class="input-group" >
                             <span><i class="fa fa-user" aria-hidden="true"></i></span>
-                            <input type="email" name="username" placeholder="Email or Username" required="">
+                            <input type="email" name="username" placeholder="Email or Username"  required="" required style="color: white;">
                         </div>
                         <div class="input-group two-groop">
                             <span><i class="fa fa-key" aria-hidden="true"></i></span>
-                            <input type="Password" name="password" placeholder="Password" required="">
+                            <input type="Password" name="password" placeholder="Password" required="" required style="color: white;">
                         </div>
                         <div class="form-row bottom">
                             <div class="form-check">
-                               {% if error_message %}
+                                {% if error_message %}
                                   <p style="color: red;">{{ error_message }}</p>
                                {% endif %}
-                                <input type="checkbox" id="remenber" name="remenber" value="remenber">
-                                <label for="remenber"> Remember me?</label>
+                                <input type="checkbox" id="remenber"  name="remenber" value="remenber" >
+                                <label for="remenber" style="color: yellow;" > Remember me?</label>
                             </div>
                         <a href="#" class="forgot" onclick="showMessage()">Forgot password?</a>
                             <div class="modal" id="customModal"><div class="modal-content">
@@ -61,7 +65,7 @@ Author URL: http://w3layouts.com
                         </div>
                         <button class="btn btn-primary btn-block" type="submit">Log In </button>
                     </form>
-                
+
 {#                    <p class="account">Don't have an account? <a href="/myapp/compsignup/">Register</a></p>#}
                 </div>
             </div>

@@ -5,40 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbb56032-592c-4106-8deb-91d68488d2c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/static/login/popupalert/alert.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/static/login/popupalert/popup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/laodinganimation.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240218201116365839.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111651785037.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111703773954.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111707457035.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111707686361.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111708110998.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111708557200.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111708560974.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111709030034.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111710935444.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111736443724.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111801019339.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111809234061.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111822716349.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111825251353.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111825646380.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111830502718.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111831739121.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111832466066.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111832981180.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111833760991.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111834488359.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111836371028.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304111836389712.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240304205413422069.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/family/20240305163018257071.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/p320240217-0146093.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/media/p320240219-1924173.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/LOGIN.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/laodinganimation.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/views.py" afterPath="$PROJECT_DIR$/myapp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ADMIN/Admin_index.html" afterPath="$PROJECT_DIR$/templates/ADMIN/Admin_index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/loginindex.html" afterPath="$PROJECT_DIR$/templates/loginindex.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,14 +39,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="Admin_index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/Admin_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6426">
+              <caret line="306" column="43" lean-forward="false" selection-start-line="306" selection-start-column="43" selection-end-line="306" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="loginindex.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/loginindex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-252">
-              <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="0">
+              <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
               <folding>
+                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#2758#2765#1#HTML" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,31 +75,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="laodinganimation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/laodinganimation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,7 +177,6 @@
         <option value="$PROJECT_DIR$/templates/ADMIN/admin view registered users.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/admin edit police.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/view_detect_det.html" />
-        <option value="$PROJECT_DIR$/templates/ADMIN/Admin_index.html" />
         <option value="$PROJECT_DIR$/templates/POLICE/Police_index.html" />
         <option value="$PROJECT_DIR$/templates/POLICE/police view criminals.html" />
         <option value="$PROJECT_DIR$/templates/POLICE/police view registered users.html" />
@@ -222,13 +186,14 @@
         <option value="$PROJECT_DIR$/templates/ADMIN/admin complaints.html" />
         <option value="$PROJECT_DIR$/templates/LOGIN.html" />
         <option value="$PROJECT_DIR$/myapp/models.py" />
-        <option value="$PROJECT_DIR$/myapp/views.py" />
         <option value="$PROJECT_DIR$/myapp/static/login/css/loginindex.css" />
         <option value="$PROJECT_DIR$/myapp/static/login/contact admin/sccontact.js" />
-        <option value="$PROJECT_DIR$/templates/loginindex.html" />
         <option value="$PROJECT_DIR$/myapp/static/login/popupalert/alert.css" />
         <option value="$PROJECT_DIR$/myapp/static/login/popupalert/popup.js" />
         <option value="$PROJECT_DIR$/templates/laodinganimation.html" />
+        <option value="$PROJECT_DIR$/myapp/views.py" />
+        <option value="$PROJECT_DIR$/templates/loginindex.html" />
+        <option value="$PROJECT_DIR$/templates/ADMIN/Admin_index.html" />
       </list>
     </option>
   </component>
@@ -239,9 +204,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="976" />
-    <option name="height" value="1088" />
+    <option name="x" value="-135" />
+    <option name="y" value="595" />
+    <option name="width" value="1918" />
+    <option name="height" value="1078" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -509,6 +475,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="USER" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POLICE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADMIN" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1236,14 +1256,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="976" height="1088" extended-state="0" />
+    <frame x="-135" y="595" width="1918" height="1078" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25444445" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.124321386" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31744313" sideWeight="0.5311493" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32092005" sideWeight="0.5311493" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1310,32 +1330,14 @@
           <line>512</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myapp/views.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/media/20240216055946.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/p320240219-1924173.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/p320240217-0146093.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/media/p320240219-1924173.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/p320240217-0146093.jpg" />
     <entry file="file://$PROJECT_DIR$/media/p320240225-1305243.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1366,141 +1368,37 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240305163018257071.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111834488359.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111825251353.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111830502718.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111833760991.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111836371028.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304205413422069.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111836389712.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111832981180.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/media/family/20240305163018257071.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111834488359.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111825251353.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111830502718.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111833760991.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111836371028.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304205413422069.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111836389712.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111832981180.jpg" />
     <entry file="file://$PROJECT_DIR$/media/family/frame.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111809234061.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240218201116365839.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111831739121.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111832466066.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111825646380.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111822716349.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111801019339.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111736443724.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111710935444.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111709030034.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111708560974.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111708557200.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111708110998.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111707686361.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111707457035.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111703773954.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media/family/20240304111651785037.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111809234061.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240218201116365839.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111831739121.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111832466066.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111825646380.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111822716349.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111801019339.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111736443724.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111710935444.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111709030034.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111708560974.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111708557200.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111708110998.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111707686361.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111707457035.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111703773954.jpg" />
+    <entry file="file://$PROJECT_DIR$/media/family/20240304111651785037.jpg" />
     <entry file="file://$PROJECT_DIR$/media/family/20240208002804139822.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1549,30 +1447,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/LOGIN.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/LOGIN.html" />
     <entry file="file://$PROJECT_DIR$/myapp/static/login/popupalert/popup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/loginindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2758#2765#1#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1588,25 +1468,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/loginindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="59" column="70" lean-forward="true" selection-start-line="59" selection-start-column="70" selection-end-line="59" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/Admin_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6426">
+          <caret line="306" column="43" lean-forward="false" selection-start-line="306" selection-start-column="43" selection-end-line="306" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>

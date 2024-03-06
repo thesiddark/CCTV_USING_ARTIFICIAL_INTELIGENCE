@@ -31,7 +31,7 @@ def login_post(request):
 
 def logout(request):
     request.session['lid']=''
-    return HttpResponse('''<script>alert("Logouted");window.location='/myapp/login/'</script>''')
+    return render(request, 'loginindex.html', {'logout_message': "You signed out of you account"})
 
 
 def admin_add_police(request):
