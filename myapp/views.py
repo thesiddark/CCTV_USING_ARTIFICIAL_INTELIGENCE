@@ -1,6 +1,7 @@
 from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 from myapp.models import *
 
@@ -25,18 +26,18 @@ def login_post(request):
         else:
             return HttpResponse('''<script>alert("Invalid");window.location='/myapp/login/'</script>''')
     else:
-        return HttpResponse('''<script>alert("Invalid");window.location='/myapp/login/'</script>''')
+        return render(request, 'loginindex.html', {'error_message': "Invalid username or password. Please try again."})
 
 
 def logout(request):
     request.session['lid']=''
-    return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+    return HttpResponse('''<script>alert("Logouted");window.location='/myapp/login/'</script>''')
 
 
 def admin_add_police(request):
 
     if request.session['lid']=='':
-        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+        return HttpResponse('''<script>alert("Logouted");window.location='/myapp/login/'</script>''')
 
     return render(request,'ADMIN/admin add police.html')
 
