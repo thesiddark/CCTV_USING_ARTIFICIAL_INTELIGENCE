@@ -6,52 +6,56 @@
 </head>
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
-<body><form action="/myapp/edit_police_post/" method="post">
+<body>
+<div align="center"><div><i class="fa-regular fa-handcuffs"></i></div>
+    <h1 style="font-weight: bold; background: linear-gradient(to right, #FF3F1F, #4EAEFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">POLICE STATION REGISTRATION EDIT</h1>
+</div><br>
+<form action="/myapp/edit_police_post/" method="post">
     <table class="table table-bordered">
   <tr>
       {% csrf_token %}
       <input type="hidden" name="id" value="{{ data.id }}"/>
-    <td>station name</td>
+    <td>Station Name</td>
     <td>
-      <input type="text" name="station" id="textfield" value="{{ data.station_name }}" class="form-control" required/></td>
+      <input type="text" name="station" id="textfield" value="{{ data.station_name }}" class="form-control" required /></td>
   </tr>
   <tr>
     <td>SI name </td>
     <td>
-      <input type="text" name="siname" id="textfield2" value="{{ data.SI_name }}" class="form-control"required/></td>
+      <input type="text" name="siname" id="textfield2" value="{{ data.SI_name }}" class="form-control"required required pattern="[A-Za-z]+" title="Only characters are allowed"/></td>
   </tr>
   <tr>
-    <td>place </td>
+    <td>Place </td>
     <td>
       <input type="text" name="place" id="textfield3" value="{{ data.place }}" class="form-control"required/> </td>
   </tr>
   <tr>
-    <td>post </td>
+    <td>Post </td>
     <td>
-      <input type="text" name="post" id="textfield4" value="{{ data.post }}" class="form-control"required/></td>
+      <input type="text" name="post" id="textfield4" value="{{ data.post }}" class="form-control"required required pattern="[A-Za-z]+" title="Only characters are allowed"/></td>
   </tr>
   <tr>
-    <td>pin</td>
+    <td>Pin</td>
     <td>
-      <input type="text" name="pin" id="textfield5" value="{{ data.pin }}"class="form-control"required/></td>
+      <input type="text" name="pin" id="textfield5" value="{{ data.pin }}"class="form-control"required required pattern="[0-9]{1,6}" title="Please enter a vaild Pin code"/></td>
   </tr>
   <tr>
     <td>Email ID</td>
     <td>
-      <input type="text" name="email_id" id="email_id" value="{{ data.email_id }}" class="form-control"required/></td>
+      <input type="EMAIL" name="email_id" id="email_id" value="{{ data.email_id }}" class="form-control"required/></td>
   </tr>
   <tr>
-    <td>phone </td>
+    <td>Phone </td>
     <td><label for="textfield7"></label>
-      <input type="text" name="phone" id="phone" value="{{ data.phone }}" class="form-control"required/></td>
+      <input type="text" name="phone" id="phone" value="{{ data.phone }}" class="form-control"requiredrequired pattern="[0-9]{10}" title="Phone number should have 10 digits"/></td>
   </tr>
   <tr>
-    <td>district</td>
+    <td>District</td>
     <td><label for="textfield8"></label>
       <input type="text" name="district" id="district" value="{{ data.district }}" class="form-control"required/></td>
   </tr>
   <tr>
-    <td colspan="2"><input type="submit" name="button" id="button" value="Edit" class="btn btn-info" /></td>
+    <td colspan="2"><CENTER><input type="submit" name="button" id="button" value="Edit" class="btn btn-info"  /></CENTER></td>
     </tr>
 </table>
 </form>

@@ -4,11 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>POLICE MANGEMENT</title>
     <link rel="shortcut icon" href="/static/Home/assets/images/logotrans.ico" type="image/x-icon">
-
+     <script src="/static/validation/validatenow.js"></script>
 </head>
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
-<body><form action="/myapp/add_police_post/" method="post">
+<body><form action="/myapp/add_police_post/" method="post" >
     {% csrf_token %}
     <div align="center"><div><i class="fa-regular fa-handcuffs"></i></div>
     <h1 style="font-weight: bold; background: linear-gradient(to right, #FF3F1F, #4EAEFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">POLICE STATION REGISTRATION</h1>
@@ -23,7 +23,7 @@
   <tr>
     <td>SI Name </td>
     <td>
-      <input type="text" name="siname" id="textfield2" class="form-control" required/></td>
+      <input type="text" name="siname" id="textfield2" class="form-control" required required pattern="[A-Za-z]+" title="Only characters are allowed"/></td>
   </tr>
   <tr>
     <td>Place </td>
@@ -33,27 +33,44 @@
   <tr>
     <td>Post</td>
     <td>
-      <input type="text" name="post" id="textfield4" class="form-control"required /></td>
+      <input type="text" name="post" id="textfield4" class="form-control"required  required pattern="[A-Za-z]+" title="Only characters (letters) are allowed"/></td>
   </tr>
   <tr>
     <td>Pin</td>
     <td>
-      <input type="text" name="pin" id="textfield5" class="form-control" required/></td>
+      <input type="text" name="pin" id="textfield5" class="form-control" required required pattern="[0-9]{1,6}" title="Please enter a vaild Pin code"/></td>
   </tr>
   <tr>
     <td>Email ID</td>
     <td>
-      <input type="text" name="email id" id="textfield6" class="form-control" required/></td>
+      <input type="email" name="email id" id="textfield6" class="form-control" required/></td>
   </tr>
   <tr>
     <td>Phone </td>
     <td>
-      <input type="text" name="phone" id="textfield7"class="form-control" required /></td>
+      <input type="text" name="phone" id="textfield7"class="form-control" required required pattern="[0-9]{10}" title="Phone number should have 10 digits" /></td>
   </tr>
   <tr>
-    <td>District</td>
+   <td>District</td>
     <td>
-      <input type="text" name="district" id="textfield8" class="form-control" required/></td>
+        <select name="district" id="district" class="form-control" required>
+            <option value="">Select District</option>
+            <option value="Alappuzha">Alappuzha</option>
+            <option value="Ernakulam">Ernakulam</option>
+            <option value="Idukki">Idukki</option>
+            <option value="Kannur">Kannur</option>
+            <option value="Kasaragod">Kasaragod</option>
+            <option value="Kollam">Kollam</option>
+            <option value="Kottayam">Kottayam</option>
+            <option value="Kozhikode">Kozhikode</option>
+            <option value="Malappuram">Malappuram</option>
+            <option value="Palakkad">Palakkad</option>
+            <option value="Pathanamthitta">Pathanamthitta</option>
+            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+            <option value="Thrissur">Thrissur</option>
+            <option value="Wayanad">Wayanad</option>
+        </select>
+    </td>
   </tr>
   <tr align="center">
     <td colspan="2"><input type="submit" name="button" id="button" value="Add" class="btn btn-info" /></td>

@@ -94,9 +94,11 @@ def admin_change_password_post(request):
             abc = Login.objects.filter(password=currentpassword, id=request.session['lid']).update(password=confirmpassword)
             return HttpResponse('''<script>alert("success");window.location='/myapp/login/'</script>''')
         else:
-            return HttpResponse('''<script>alert("Invalid");window.location='/myapp/admin_change_password/'</script>''')
+            return render(request, '/ADMIN/admin change password.html',
+                          {'pass_message': "Please check Current password (01)"})
     else:
-        return HttpResponse('''<script>alert("Invalid");window.location='/myapp/admin_change_password/'</script>''')
+        return render(request, 'ADMIN/admin change password.html',
+                      {'pass_message': "Please check Current password (02)"})
 
 
 

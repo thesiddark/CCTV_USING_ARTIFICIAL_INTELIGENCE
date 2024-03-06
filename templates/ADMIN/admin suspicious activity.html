@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>AICCTV</title>
 </head>
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
@@ -17,11 +17,11 @@
   <tr>{% csrf_token %}
     <td>From</td>
     <td>
-      <input type="date" name="from" id="textfield" /></td>
+      <input type="date" name="from" id="textfield" value="2024-01-01"/></td>
     <td>To</td>
     <td>
-      <input type="date" name="to" id="textfield2" /></td>
-    <td><input type="submit" name="button" id="button" value="search" class="btn btn-success"/></td>
+      <input type="date" name="to" id="textfield2" value="2024-01-01"/></td>
+    <td><input type="submit" name="button" id="button" value="Search" class="btn btn-success"/></td>
   </tr>
 </table>
     <table class="table table-bordered">
