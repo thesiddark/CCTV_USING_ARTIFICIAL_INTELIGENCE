@@ -36,10 +36,10 @@
         <td>{{ forloop.counter }}</td>
         <td>{{ i.date }}</td>
         <td>{{ i.time }}</td>
-        <td><img src="{{ i.CRIMINAL.photo }}" height="100px" width="100px" style="border-radius: 8px;">
-            {{ i.CRIMINAL.name }}
+        <td><img src="{{ i.photo }}" height="100px" width="100px" style="border-radius: 8px;">
+            {{ i.name }}
         </td>
-        <td>{{ i.CRIMINAL.POLICE.station_name }}</td>
+        <td>{{ i.station }}</td>
     </tr>
     {% endfor %}
 </table>

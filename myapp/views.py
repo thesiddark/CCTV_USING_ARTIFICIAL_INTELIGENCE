@@ -95,10 +95,10 @@ def admin_change_password_post(request):
             return HttpResponse('''<script>alert("success");window.location='/myapp/login/'</script>''')
         else:
             return render(request, '/ADMIN/admin change password.html',
-                          {'pass_message': "Please check Current password (01)"})
+                          {'pass_message': "something went wrong (Error:01)"})
     else:
         return render(request, 'ADMIN/admin change password.html',
-                      {'pass_message': "Please check Current password (02)"})
+                      {'pass_message': "Please check your Current password (Error:02)"})
 
 
 
@@ -781,7 +781,7 @@ def user_edit_profile(request):
 
         from datetime import datetime
         import base64
-        date = datetime.now().strftime('%Y%m%d-%H%M%S%F')
+        date = datetime.now().strftime('%Y%m%d%H%M%S%F')
         a = base64.b64decode(photo)
         fh = open("C:\\Users\\sidharth\\Documents\\GitHub\\Aicctv\\media\\user\\" + date + ".jpg", "wb")
         path = '/media/user/' + date + ".jpg"
@@ -1021,7 +1021,15 @@ def forward_suspicious_activity_post(request):
 def view_detect_det(request):
     if request.session['lid'] != '':
         cobj = detection.objects.all()
-        return render(request, 'ADMIN/view_detect_det.html', {"data": cobj})
+        l=[]
+        for i in cobj:
+            name=''
+            if i.type=='criminal':
+                name=Criminals.objects.get(id=i.did)
+            if i.type=='unknown'
+                name=family.objects.get(id=i.did)
+            l.append({"date": i.date, "name": name.name})
+            return render(request, 'ADMIN/view_detect_det.html', {"data": l})
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
 
