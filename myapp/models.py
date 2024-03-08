@@ -108,6 +108,7 @@ class detection(models.Model):
     time=models.CharField(max_length=100)
     name= models.CharField(max_length=100)
     type= models.CharField(max_length=100)
+    message= models.CharField(max_length=100,default='')
     photo= models.CharField(max_length=100,default='')
     did=models.IntegerField()
 

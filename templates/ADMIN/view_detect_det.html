@@ -27,7 +27,8 @@
         <td>SN No</td>
         <td>DATE</td>
         <td>TIME</td>
-        <td>CRIMINALS</td>
+        <td>Details</td>
+        <td>Threat Level</td>
         <td>POLICE STATION</td>
 
     </tr>
@@ -39,6 +40,7 @@
         <td><img src="{{ i.photo }}" height="100px" width="100px" style="border-radius: 8px;">
             {{ i.name }}
         </td>
+        <td>{{ i.message }}</td>
         <td>{{ i.station }}</td>
     </tr>
     {% endfor %}

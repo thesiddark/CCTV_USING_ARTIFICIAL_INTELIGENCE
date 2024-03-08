@@ -5,10 +5,11 @@
         <form class="d-flex" role="search" method="post" action="/myapp/p_search_view_detect_det/#abc">
         <div class="col-lg-5">
                  {% csrf_token %}
+            TO
               <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="fdate" value="2024-03-08">
-        </div>TO
-        <div class="col-lg-5">
-              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate" value="2024-03-08" >
+        </div>
+        <div class="col-lg-5">From
+              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate" value="2024-03-08">
         </div>
         <div class="col-lg-2">
           <button class="btn btn-success" type="submit">Search</button>
@@ -20,8 +21,7 @@
         <td>s/no</td>
         <td>Date</td>
         <td>Time</td>
-        <td>Criminal</td>
-        <td>Police Station</td>
+        <td>Details</td>
 
     </tr>
    {% for i in data %}
@@ -32,7 +32,6 @@
         <td><img src="{{ i.photo }}" height="100px" width="100px" style="border-radius: 8px;">
             {{ i.name }}
         </td>
-        <td>{{ i.station }}</td>
     </tr>
     {% endfor %}
 </table>

@@ -29,6 +29,7 @@ urlpatterns = [
     path('registered_users_post/',views.admin_view_registered_users_post),
     path('send_reply_post/',views.send_reply_post),
     path('send_reply/<id>',views.send_reply),
+    path('view_detected_unknown/',views.view_detect_unknown),
     #users
     # path('user_add_family_members/',views.user_add_family_members),
     # path('chat/',views.user_chat),
@@ -36,6 +37,8 @@ urlpatterns = [
     # path('view and edit profile/',views.user_view_and_edit_profile),
     path('view criminals/',views.user_view_criminals),
     path('family members/',views.user_view_family_members),
+
+
     #police
     path('police_add_criminals/',views.police_add_criminals),
     path('police_add_criminals_post/',views.police_add_criminals_post),
@@ -60,6 +63,8 @@ urlpatterns = [
     path('p_search_view_detect_det/',views.p_search_view_detect_det),
     path('view_detect_det/',views.view_detect_det),
     path('search_view_detect_det/',views.search_view_detect_det),
+    path('p_view_detected_unknown/',views.p_view_detect_unknown),
+
     path('user_edit_profile_get/',views.user_edit_profile_get),
 
 

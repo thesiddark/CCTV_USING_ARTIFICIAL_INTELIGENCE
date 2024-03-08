@@ -15,15 +15,15 @@
 <form id="form1" name="form1" method="post" action="/myapp/admin_suspicious_activity_post/">
     <table class="pull-left">
   <tr>{% csrf_token %}
-    <td>From</td>
-    <td>
+    <td style="padding-right: 20px;">From</td>
+    <td style="padding-right: 20px;">
       <input type="date" name="from" id="textfield" value="2024-01-01"/></td>
-    <td>To</td>
-    <td>
+    <td style="padding-right: 20px;">To</td>
+    <td style="padding-right: 20px;">
       <input type="date" name="to" id="textfield2" value="2024-01-01"/></td>
     <td><input type="submit" name="button" id="button" value="Search" class="btn btn-success"/></td>
   </tr>
-</table>
+</table><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <table class="table table-bordered">
   <tr>
     <td>SN NO</td>
