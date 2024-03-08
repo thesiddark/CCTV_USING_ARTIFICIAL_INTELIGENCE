@@ -294,10 +294,11 @@ def police_change_password_post(request):
             abc = Login.objects.filter(password=currentpassword, id=request.session['lid']).update(password=confirmpassword)
             return HttpResponse('''<script>alert("success");window.location='/myapp/login/'</script>''')
         else:
-            return HttpResponse('''<script>alert("Invalid");window.location='/myapp/police_change_password/'</script>''')
+            return render(request, '/POLICE/police change password.html',
+                          {'pass_message': "something went wrong (Error:01)"})
     else:
-        return HttpResponse('''<script>alert("Invalid");window.location='/myapp/police_change_password/'</script>''')
-
+        return render(request, 'POLICE/police change password.html',
+                      {'pass_message': "Please check your Current password (Error:02)"})
 
 
 def police_view_profile(request):

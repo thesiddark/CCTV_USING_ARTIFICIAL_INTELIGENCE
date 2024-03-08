@@ -37,7 +37,7 @@ Author URL: http://w3layouts.com
                 {% if logout_message %}
                                   <p style="color: orangered;">{{ logout_message }}</p>
                                {% endif %}
-                    <form action="/myapp/login_post/" method="post" >
+                    <form action="/myapp/login_post/" method="post">
                         {% csrf_token %}
                         <div class="input-group" >
                             <span><i class="fa fa-user" aria-hidden="true"></i></span>
