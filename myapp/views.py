@@ -1023,15 +1023,18 @@ def view_detect_det(request):
         cobj = detection.objects.all()
         l=[]
         for i in cobj:
-            name=''
             if i.type=='criminal':
                 name=Criminals.objects.get(id=i.did)
-            if i.type=='unknown'
-                name=family.objects.get(id=i.did)
-            l.append({"date": i.date, "name": name.name})
-            return render(request, 'ADMIN/view_detect_det.html', {"data": l})
+                l.append({"name":name.name,"station":name.POLICE.station_name,"date":i.date,"photo":i.photo,"time":i.time})
+            if i.type=='unknown':
+                name="un"
+                l.append({"name":name,"station":name,"date":i.date,"photo":i.photo,"time":i.time})
+                print(l)
+        return render(request, 'ADMIN/view_detect_det.html', {"data": l})
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
+
+
 
 def search_view_detect_det(request):
     if request.session['lid'] != '':
