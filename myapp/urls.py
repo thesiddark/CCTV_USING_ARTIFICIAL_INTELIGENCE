@@ -29,7 +29,7 @@ urlpatterns = [
     path('registered_users_post/',views.admin_view_registered_users_post),
     path('send_reply_post/',views.send_reply_post),
     path('send_reply/<id>',views.send_reply),
-    path('view_detected_unknown/',views.view_detect_unknown),
+    path('admin_view_detected_unknown/',views.admin_view_detect_unknown),
     #users
     # path('user_add_family_members/',views.user_add_family_members),
     # path('chat/',views.user_chat),

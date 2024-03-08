@@ -1,4 +1,4 @@
-{% extends 'POLICE/Police_index.html' %}
+{% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
 
 <div class="row">
@@ -11,20 +11,20 @@
         <div class="col-lg-5">From
               <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate" value="2024-03-08">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2"><br>
           <button class="btn btn-success" type="submit">Search</button>
         </div><br><br>
         </form>
-    </div>
+    </div><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <table class="table table-striped">
     <tr>
-        <td>s/no</td>
+        <td>S/no</td>
         <td>Date</td>
         <td>Time</td>
         <td>Details</td>
 
     </tr>
-   {% for i in data %}
+   {% for i in data reversed %}
     <tr>
         <td>{{ forloop.counter }}</td>
         <td>{{ i.date }}</td>

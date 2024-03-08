@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>AI CCTVv</title>
 </head>
 {% extends 'ADMIN/Admin_index.html' %}
 {% block body %}
@@ -15,11 +15,11 @@
 {% csrf_token %}
 <table class="pull-left">
   <tr>
-    <td>From Date</td>
-    <td>
+    <td style="padding-right: 20px;">From Date</td>
+    <td style="padding-right: 20px;">
       <input type="date" name="from" id="textfield" value="2024-01-01"/></td>
-    <td>To date</td>
-    <td>
+    <td style="padding-right: 20px;">To date</td>
+    <tdstyle="padding-right: 20px;">
       <input type="date" name="to" id="textfield2" value="2024-01-01"/></td>
         <td><input type="submit" name="button" id="button" value="Search" class="btn btn-info"/></td>
 
@@ -28,6 +28,7 @@
     <table class="table table-bordered">
   <tr>
     <td>SI NO</td>
+      <td>User</td>
     <td>DATE</td>
     <td>COMPLAINT</td>
     <td>STATUS</td>
@@ -36,6 +37,7 @@
     {% for i in data %}
   <tr>
     <td>{{forloop.counter  }}&nbsp;</td>
+  <td>{{ i.USER }}</td>
     <td>&nbsp;{{ i.date }}</td>
     <td>{{ i.complaint }}</td>
     <td>{{ i.status }}</td>
@@ -48,6 +50,6 @@
   </tr>
     {% endfor %}
 </table>
-</form
-></body>{% endblock %}
+</form>
+</body>{% endblock %}
 </html>

@@ -105,12 +105,13 @@ def admin_change_password_post(request):
 def admin_complaints(request):
     if request.session['lid']=='':
         return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
-
     var = Complaints.objects.all()
+
     return render(request,'ADMIN/admin complaints.html',{'data':var})
 
 def admin_complaints_post(request):
     if request.session['lid']=='':
+
         return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
 
     fromdate=request.POST['from']
@@ -259,17 +260,18 @@ def admin_view_registered_users_post(request):
     var = User.objects.filter(name__icontains=search)
     return render(request, 'ADMIN/admin view registered users.html',{'data': var})
 
-def view_detect_unknown(request):
+def admin_view_detect_unknown(request):
     if request.session['lid'] != '':
-        cobj = detection.objects.filter(type='unknown')
+        cobj = detection.objects.filter(type='unknown').order_by('-time')
         l = []
         for i in cobj:
             if i.type == 'unknown':
                 l.append({"date": i.date, "photo": i.photo, "time": i.time})
-
-        return render(request, 'POLICE/view_deteted_unknown.html', {"data": l})
+        return render(request, 'ADMIN/admin_view_deteted_unknown.html', {"data": l})
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
+
+
 
 #police
 
@@ -1032,16 +1034,13 @@ def forward_suspicious_activity_post(request):
 
 def view_detect_det(request):
     if request.session['lid'] != '':
-        cobj = detection.objects.all()
+        cobj = detection.objects.all().order_by('-time')
         l=[]
         for i in cobj:
             if i.type=='criminal':
                 name=Criminals.objects.get(id=i.did)
                 l.append({"name":name.name,"message":"HIGH","station":name.POLICE.station_name,"date":i.date,"photo":i.photo,"time":i.time})
-            if i.type=='unknown':
-                name="unknown"
-                l.append({"name":name,"date":i.date,"photo":i.photo,"time":i.time})
-                print(l)
+
         return render(request, 'ADMIN/view_detect_det.html', {"data": l})
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
@@ -1061,7 +1060,7 @@ def search_view_detect_det(request):
 #police
 def p_view_detect_det(request):
     if request.session['lid'] != '':
-        cobj = detection.objects.filter(type='criminal')
+        cobj = detection.objects.filter(type='criminal').order_by('-time')
         l = []
         for i in cobj:
             if i.type == 'criminal':
@@ -1100,7 +1099,7 @@ def View_Detected_Criminal_search(request):
 
 def p_view_detect_unknown(request):
     if request.session['lid'] != '':
-        cobj = detection.objects.filter(type='unknown')
+        cobj = detection.objects.filter(type='unknown').order_by('-time')
         l = []
         for i in cobj:
             if i.type == 'unknown':

@@ -5,48 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbb56032-592c-4106-8deb-91d68488d2c7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myapp/static/Home/assets/img/slider/campic.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/Dr.-M.-Abdul-Salam.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/NicolasPatrici.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/VCMohammedBasheer-.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.08_b021cf0a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.09_f27f41ed.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.09_ff39f193.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.10_5291106a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/aabout-us.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/about-us.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/acounter-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/amina-wadud.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/balaguruswammi_photo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/blog/blog-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/blog/blog-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/blog/blog-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/counter-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/courses/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/courses/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/courses/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/mi-shanavas.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/taestimonial-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/taestimonial-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/WhatsApp Image 2023-12-27 at 11.48.08_b021cf0a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/WhatsApp Image 2023-12-27 at 11.48.09_f27f41ed.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/WhatsApp Image 2023-12-27 at 11.48.09_ff39f193.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/WhatsApp Image 2023-12-27 at 11.48.10_5291106a.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/teacher-01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/teacher-02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/teacher-03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/teacher-04.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myapp/static/Home/assets/img/uma-behra.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/USER/user add family members .html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/USER/user chat.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/USER/user review.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/USER/user view and edit profile.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/USER/user view criminals.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/USER/user view family member.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/ADMIN/view_deteted_unknown.html" afterPath="$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/urls.py" afterPath="$PROJECT_DIR$/myapp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/views.py" afterPath="$PROJECT_DIR$/myapp/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ADMIN/Admin_index.html" afterPath="$PROJECT_DIR$/templates/ADMIN/Admin_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/POLICE/police change password.html" afterPath="$PROJECT_DIR$/templates/POLICE/police change password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/loginindex.html" afterPath="$PROJECT_DIR$/templates/loginindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ADMIN/admin complaints.html" afterPath="$PROJECT_DIR$/templates/ADMIN/admin complaints.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/POLICE/view_detect_det.html" afterPath="$PROJECT_DIR$/templates/POLICE/view_detect_det.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,36 +47,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="admin change password.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin change password.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-              <folding>
-                <element signature="e#2182#2207#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="police change password.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/POLICE/police change password.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="54" column="11" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-              <folding>
-                <element signature="e#2196#2221#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginindex.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loginindex.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/loginindex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="231">
+              <caret line="47" column="90" lean-forward="false" selection-start-line="47" selection-start-column="90" selection-end-line="47" selection-end-column="90" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,8 +62,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="288" column="51" lean-forward="true" selection-start-line="288" selection-start-column="51" selection-end-line="288" selection-end-column="51" />
+            <state relative-caret-position="401">
+              <caret line="264" column="73" lean-forward="false" selection-start-line="264" selection-start-column="73" selection-end-line="264" selection-end-column="73" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -122,34 +71,105 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Admin_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/ADMIN/Admin_index.html">
+      <file leaf-file-name="admin_view_deteted_unknown.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="72" column="86" lean-forward="false" selection-start-line="72" selection-start-column="86" selection-end-line="72" selection-end-column="86" />
+            <state relative-caret-position="357">
+              <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="56" />
+              <folding>
+                <element signature="e#756#762#0#HTML" expanded="true" />
+                <element signature="e#762#768#0#HTML" expanded="true" />
+                <element signature="e#774#780#0#HTML" expanded="true" />
+                <element signature="e#780#786#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_detect_det.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/POLICE/view_detect_det.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+              <folding>
+                <element signature="e#728#734#0#HTML" expanded="true" />
+                <element signature="e#734#740#0#HTML" expanded="true" />
+                <element signature="e#740#746#0#HTML" expanded="true" />
+                <element signature="e#752#758#0#HTML" expanded="true" />
+                <element signature="e#758#764#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="send reply.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/send reply.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cam5-transformed.jpeg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/slider/cam5-transformed.jpeg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="63" column="47" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="49" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cam4.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/slider/cam4.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="admin complaints.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin complaints.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="camera1.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/slider/camera1.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="police view criminals.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/POLICE/police view criminals.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="62" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#789#795#0#HTML" expanded="true" />
+                <element signature="e#795#801#0#HTML" expanded="true" />
+                <element signature="e#801#807#0#HTML" expanded="true" />
+                <element signature="e#813#819#0#HTML" expanded="true" />
+                <element signature="e#819#825#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin_index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/Admin_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="126" column="51" lean-forward="false" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="51" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -203,7 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/USER/user review.html" />
         <option value="$PROJECT_DIR$/templates/USER/user view and edit profile.html" />
         <option value="$PROJECT_DIR$/templates/USER/user view criminals.html" />
         <option value="$PROJECT_DIR$/templates/USER/user view family member.html" />
@@ -235,14 +254,11 @@
         <option value="$PROJECT_DIR$/templates/POLICE/police add criminals.html" />
         <option value="$PROJECT_DIR$/myapp/static/Home/scss/bootstrap/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/myapp/static/Home/css/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/templates/ADMIN/admin complaints.html" />
         <option value="$PROJECT_DIR$/Aicctv/settings.py" />
         <option value="$PROJECT_DIR$/templates/ADMIN/view_detect_det.html" />
         <option value="$PROJECT_DIR$/myapp/models.py" />
         <option value="$PROJECT_DIR$/templates/POLICE/Police_index.html" />
-        <option value="$PROJECT_DIR$/myapp/urls.py" />
         <option value="$PROJECT_DIR$/templates/ADMIN/view_deteted_unknown.html" />
-        <option value="$PROJECT_DIR$/templates/POLICE/view_detect_det.html" />
         <option value="$PROJECT_DIR$/templates/POLICE/view_deteted_unknown.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/admin view criminals.html" />
         <option value="$PROJECT_DIR$/templates/POLICE/police view criminals.html" />
@@ -250,10 +266,14 @@
         <option value="$PROJECT_DIR$/templates/POLICE/police suspicious activity.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/admin view police.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/admin view registered users.html" />
-        <option value="$PROJECT_DIR$/templates/ADMIN/Admin_index.html" />
-        <option value="$PROJECT_DIR$/myapp/views.py" />
         <option value="$PROJECT_DIR$/templates/POLICE/police change password.html" />
         <option value="$PROJECT_DIR$/templates/loginindex.html" />
+        <option value="$PROJECT_DIR$/templates/ADMIN/Admin_index.html" />
+        <option value="$PROJECT_DIR$/myapp/urls.py" />
+        <option value="$PROJECT_DIR$/templates/ADMIN/admin complaints.html" />
+        <option value="$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html" />
+        <option value="$PROJECT_DIR$/myapp/views.py" />
+        <option value="$PROJECT_DIR$/templates/POLICE/view_detect_det.html" />
       </list>
     </option>
   </component>
@@ -264,8 +284,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-146" />
-    <option name="y" value="66" />
+    <option name="x" value="-49" />
     <option name="width" value="1918" />
     <option name="height" value="1088" />
   </component>
@@ -511,7 +530,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -588,152 +606,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -741,7 +616,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/PROJ-camera,susp_sctivity-/detect suspicious activity" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="/myapp/static/Home/assets/images/loginpage.jpg&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;myapp/static/Home/assets/images/loginpage.jpg&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;loginpage&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;--orange&#9;null&#9;null&#10;fd7e14&#9;null&#9;null&#10;#fd7e14&#9;null&#9;null&#10;orange&#9;null&#9;null&#10;#FFA500&#9;null&#9;null&#10;.invalid-feedback&#9;null&#9;null&#10; fa-camera&#9;null&#9;null&#10;fa-camera&#9;null&#9;null&#10;logo&#9;null&#9;null&#10;image&#9;null&#9;null&#10;icon-bar&#9;null&#9;null&#10;navbar-brand&#9;null&#9;null&#10;waypoints&#9;null&#9;null&#10;/static/Home/assets/js/waypoints.js&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/js/waypoints.js" />
+    <property name="SearchEverywhereHistoryKey" value="view_detect_det&#9;null&#9;null&#10;loginpage&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;/myapp/static/Home/assets/images/loginpage.jpg&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;myapp/static/Home/assets/images/loginpage.jpg&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;--orange&#9;null&#9;null&#10;fd7e14&#9;null&#9;null&#10;#fd7e14&#9;null&#9;null&#10;orange&#9;null&#9;null&#10;#FFA500&#9;null&#9;null&#10;.invalid-feedback&#9;null&#9;null&#10; fa-camera&#9;null&#9;null&#10;fa-camera&#9;null&#9;null&#10;logo&#9;null&#9;null&#10;image&#9;null&#9;null&#10;icon-bar&#9;null&#9;null&#10;navbar-brand&#9;null&#9;null&#10;waypoints&#9;null&#9;null&#10;/static/Home/assets/js/waypoints.js&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/js/waypoints.js" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
   </component>
   <component name="RecentsManager">
@@ -1093,21 +968,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-146" y="66" width="1918" height="1088" extended-state="0" />
-    <editor active="true" />
+    <frame x="-49" y="0" width="1918" height="1088" extended-state="0" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25785482" sideWeight="0.5021482" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49785176" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49570355" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49785176" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33261105" sideWeight="0.5042965" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32047158" sideWeight="0.46294308" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22747014" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49785176" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16004297" sideWeight="0.50574714" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1119,26 +993,26 @@
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49785176" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32258064" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32047158" sideWeight="0.5370569" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32047158" sideWeight="0.46294308" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33727175" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290461" sideWeight="0.49570355" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49785176" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3290461" sideWeight="0.5042965" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32047158" sideWeight="0.46294308" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22878624" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298647" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49785176" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16004297" sideWeight="0.50574714" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1153,168 +1027,38 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myapp/views.py</url>
-          <line>526</line>
+          <line>528</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myapp/views.py</url>
+          <line>262</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/blog/blog-2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/blog/blog-1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/blog/blog-3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/courses/1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/courses/2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/about-us.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/teacher-01.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/teachers/teacher-03.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/acounter-bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/amina-wadud.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/balaguruswammi_photo.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/counter-bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/Dr.-M.-Abdul-Salam.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/logo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/mi-shanavas.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/NicolasPatrici.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/taestimonial-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/taestimonial-bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-1.png" />
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/taestimonial-bg.jpg" />
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-2.png" />
     <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4222">
           <caret line="905" column="24" lean-forward="false" selection-start-line="905" selection-start-column="24" selection-end-line="905" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/uma-behra.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/VCMohammedBasheer-.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.08_b021cf0a.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.09_f27f41ed.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.09_ff39f193.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.10_5291106a.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-bg.jpg" />
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/testimonial-3.png" />
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/uma-behra.jpg" />
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/VCMohammedBasheer-.jpg" />
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.08_b021cf0a.jpg" />
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.09_f27f41ed.jpg" />
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.09_ff39f193.jpg" />
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/WhatsApp Image 2023-12-27 at 11.48.10_5291106a.jpg" />
     <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/gallery/fancybox_buttons.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1345,11 +1089,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/courses/3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/courses/3.jpg" />
     <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/gallery/small/3.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1385,41 +1125,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/slider/cam5-transformed.jpeg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/slider/cam4.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="288" column="51" lean-forward="true" selection-start-line="288" selection-start-column="51" selection-end-line="288" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/Admin_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="72" column="86" lean-forward="false" selection-start-line="72" selection-start-column="86" selection-end-line="72" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin change password.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="e#2182#2207#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="294">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,17 +1142,203 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1134">
           <caret line="54" column="11" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-          <folding>
-            <element signature="e#2196#2221#0#HTML" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/images/loginpage.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/static/Home/assets/img/slider/cam5-transformed.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/USER/user add family members .html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/USER/user review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/USER/user chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/USER/user view criminals.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/USER/user view family member.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/POLICE/view_deteted_unknown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Aicctv/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Aicctv/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/send reply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/Admin_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="126" column="51" lean-forward="false" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/loginindex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+        <state relative-caret-position="231">
+          <caret line="47" column="90" lean-forward="false" selection-start-line="47" selection-start-column="90" selection-end-line="47" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin edit police.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin complaints.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#2;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/POLICE/police view criminals.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#789#795#0#HTML" expanded="true" />
+            <element signature="e#795#801#0#HTML" expanded="true" />
+            <element signature="e#801#807#0#HTML" expanded="true" />
+            <element signature="e#813#819#0#HTML" expanded="true" />
+            <element signature="e#819#825#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="63" column="47" lean-forward="false" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="264" column="73" lean-forward="false" selection-start-line="264" selection-start-column="73" selection-end-line="264" selection-end-column="73" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="56" />
+          <folding>
+            <element signature="e#756#762#0#HTML" expanded="true" />
+            <element signature="e#762#768#0#HTML" expanded="true" />
+            <element signature="e#774#780#0#HTML" expanded="true" />
+            <element signature="e#780#786#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/POLICE/view_detect_det.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding>
+            <element signature="e#728#734#0#HTML" expanded="true" />
+            <element signature="e#734#740#0#HTML" expanded="true" />
+            <element signature="e#740#746#0#HTML" expanded="true" />
+            <element signature="e#752#758#0#HTML" expanded="true" />
+            <element signature="e#758#764#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
