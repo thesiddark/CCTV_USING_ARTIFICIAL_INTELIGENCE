@@ -102,6 +102,8 @@ urlpatterns = [
     path('forward_suspicious_activity_post/', views.forward_suspicious_activity_post),
     path('View_Detected_Criminal/', views.View_Detected_Criminal),
     path('View_Detected_Criminal_search/', views.View_Detected_Criminal_search),
+    path('View_Detected_Unknown/', views.View_Detected_unknown),
+    path('View_Detected_Unknown_search/', views.View_Detected_unknown_search),
 
 
     path('logout/', views.logout),

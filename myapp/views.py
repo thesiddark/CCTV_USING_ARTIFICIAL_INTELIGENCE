@@ -1064,9 +1064,9 @@ def p_view_detect_det(request):
         l = []
         for i in cobj:
             if i.type == 'criminal':
-                name = Criminals.objects.get(id=i.did)
-                l.append({"name": name.name, "message": "HIGH", "station": name.POLICE.station_name, "date": i.date,
-                          "photo": i.photo, "time": i.time})
+                name1 = Criminals.objects.get(id=i.did)
+                l.append({"name": name1.name, "message": "HIGH", "station": name1.POLICE.station_name, "date": i.date,
+                          "photo": i.photo, "time": i.time,"username":i.USER.name})
         return render(request, 'POLICE/view_detect_det.html', {"data": l})
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
@@ -1080,20 +1080,41 @@ def p_search_view_detect_det(request):
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
 
-def View_Detected_Criminal(request):
-    robj=detection.objects.all()
+def View_Detected_unknown(request):
+    lid=request.POST['lid']
+    robj=detection.objects.filter(USER__LOGIN_id=lid,type='unknown')
     l=[]
     for i in robj:
-        l.append({'id':i.id,'cname':i.CRIMINAL.name,'photo':i.CRIMINAL.photo,'date':i.date,'time':i.time})
+        l.append({'id':i.id,'name':i.name,'photo':i.photo,'date':i.date,'time':i.time})
     print(l)
     return JsonResponse({'status': "ok",'data':l})
+
+def View_Detected_unknown_search(request):
+    search=request.POST['search']
+    robj=detection.objects.filter(date__contains=search)
+    l=[]
+    for i in robj:
+        l.append({'id':i.id,'name':i.name,'photo':i.photo,'date':i.date,'time':i.time})
+    print(l)
+    return JsonResponse({'status': "ok",'data':l})
+
+def View_Detected_Criminal(request):
+    lid=request.POST['lid']
+    robj=detection.objects.filter(USER__LOGIN_id=lid,type='criminal')
+    l=[]
+    for i in robj:
+        l.append({'id':i.id,'name':i.name,'photo':i.photo,'date':i.date,'time':i.time})
+    print(l)
+    return JsonResponse({'status': "ok",'data':l})
+
+
 
 def View_Detected_Criminal_search(request):
     search=request.POST['search']
     robj=detection.objects.filter(date__contains=search)
     l=[]
     for i in robj:
-        l.append({'id':i.id,'cname':i.CRIMINAL.name,'photo':i.CRIMINAL.photo,'date':i.date,'time':i.time})
+        l.append({'id':i.id,'name':i.name,'photo':i.photo,'date':i.date,'time':i.time})
     print(l)
     return JsonResponse({'status': "ok",'data':l})
 

@@ -29,7 +29,7 @@
         <td>TIME</td>
         <td>Details</td>
         <td>Threat Level</td>
-        <td>POLICE STATION</td>
+        <td>where</td>
 
     </tr>
     {% for i in data %}
@@ -42,6 +42,7 @@
         </td>
         <td>{{ i.message }}</td>
         <td>{{ i.station }}</td>
+        <td>{{ i.username }}</td>
     </tr>
     {% endfor %}
 </table>

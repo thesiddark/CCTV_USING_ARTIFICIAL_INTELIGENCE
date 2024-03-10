@@ -110,5 +110,7 @@ class detection(models.Model):
     type= models.CharField(max_length=100)
     message= models.CharField(max_length=100,default='')
     photo= models.CharField(max_length=100,default='')
-    did=models.IntegerField()
+    did= models.IntegerField()
+    USER = models.ForeignKey(User, on_delete=models.CASCADE)
+
 
