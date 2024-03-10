@@ -21,7 +21,8 @@
         <td>s/no</td>
         <td>Date</td>
         <td>Time</td>
-        <td>Details</td>
+        <td>Photo</td>
+        <td>Location</td>
 
     </tr>
    {% for i in data %}
@@ -32,6 +33,7 @@
         <td><img src="{{ i.photo }}" height="100px" width="100px" style="border-radius: 8px;">
             {{ i.name }}
         </td>
+    <td>{{ i.username}}<br>{{ i.place}}<br>{{ i.district }}</td>
     </tr>
     {% endfor %}
 </table>

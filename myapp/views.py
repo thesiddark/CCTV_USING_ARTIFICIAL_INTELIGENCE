@@ -266,7 +266,7 @@ def admin_view_detect_unknown(request):
         l = []
         for i in cobj:
             if i.type == 'unknown':
-                l.append({"date": i.date, "photo": i.photo, "time": i.time})
+                l.append({"date": i.date, "photo": i.photo, "time": i.time,"username":"{} , {}".format(i.USER.name,i.USER.phone),"place": "{}, {} ,{}".format(i.USER.place,i.USER.post,i.USER.pin)})
         return render(request, 'ADMIN/admin_view_deteted_unknown.html', {"data": l})
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
@@ -1031,7 +1031,7 @@ def forward_suspicious_activity_post(request):
     obj.place=place
     obj.save()
     return JsonResponse({'status': 'ok'})
-
+#admin
 def view_detect_det(request):
     if request.session['lid'] != '':
         cobj = detection.objects.all().order_by('-time')
@@ -1039,7 +1039,7 @@ def view_detect_det(request):
         for i in cobj:
             if i.type=='criminal':
                 name=Criminals.objects.get(id=i.did)
-                l.append({"name":name.name,"message":"HIGH","station":name.POLICE.station_name,"date":i.date,"photo":i.photo,"time":i.time})
+                l.append({"name":name.name,"station":name.POLICE.station_name,"date":i.date,"photo":i.photo,"time":i.time,"username":"{} , {}".format(i.USER.name,i.USER.phone),"place": "{}, {} ,{}".format(i.USER.place,i.USER.post,i.USER.pin)})
 
         return render(request, 'ADMIN/view_detect_det.html', {"data": l})
     else:
@@ -1065,8 +1065,8 @@ def p_view_detect_det(request):
         for i in cobj:
             if i.type == 'criminal':
                 name1 = Criminals.objects.get(id=i.did)
-                l.append({"name": name1.name, "message": "HIGH", "station": name1.POLICE.station_name, "date": i.date,
-                          "photo": i.photo, "time": i.time,"username":i.USER.name})
+                l.append({"name": name1.name, "message": "HIGH", "station": name1.POLICE.station_name,"district":i.USER.district, "date": i.date,
+                          "photo": i.photo, "time": i.time,"username":"{} , {}".format(i.USER.name,i.USER.phone),"place": "{}, {} ,{}".format(i.USER.place,i.USER.post,i.USER.pin)})
         return render(request, 'POLICE/view_detect_det.html', {"data": l})
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
@@ -1080,6 +1080,7 @@ def p_search_view_detect_det(request):
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
 
+#user-flutter
 def View_Detected_unknown(request):
     lid=request.POST['lid']
     robj=detection.objects.filter(USER__LOGIN_id=lid,type='unknown')
@@ -1114,7 +1115,7 @@ def View_Detected_Criminal_search(request):
     robj=detection.objects.filter(date__contains=search)
     l=[]
     for i in robj:
-        l.append({'id':i.id,'name':i.name,'photo':i.photo,'date':i.date,'time':i.time})
+        l.append({'id':i.id,'name':i.name,'photo':i.photo,'date':i.date,'time':i.time,"username":"{} , {}".format(i.USER.name,i.USER.phone),"place": "{}, {} ,{}".format(i.USER.place,i.USER.post,i.USER.pin)})
     print(l)
     return JsonResponse({'status': "ok",'data':l})
 
@@ -1124,7 +1125,7 @@ def p_view_detect_unknown(request):
         l = []
         for i in cobj:
             if i.type == 'unknown':
-                l.append({"date": i.date, "photo": i.photo, "time": i.time})
+                l.append({"date": i.date, "photo": i.photo, "time": i.time,"username":"{} , {}".format(i.USER.name,i.USER.phone),"place": "{}, {} ,{}".format(i.USER.place,i.USER.post,i.USER.pin)})
 
         return render(request, 'POLICE/view_deteted_unknown.html', {"data": l})
     else:

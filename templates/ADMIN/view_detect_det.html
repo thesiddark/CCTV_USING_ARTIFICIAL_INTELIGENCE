@@ -28,21 +28,20 @@
         <td>DATE</td>
         <td>TIME</td>
         <td>Details</td>
-        <td>Threat Level</td>
-        <td>where</td>
+        <td>Criminal Name</td>
+        <td>Location</td>
 
     </tr>
-    {% for i in data %}
+   {% for i in data %}
     <tr>
         <td>{{ forloop.counter }}</td>
         <td>{{ i.date }}</td>
         <td>{{ i.time }}</td>
         <td><img src="{{ i.photo }}" height="100px" width="100px" style="border-radius: 8px;">
-            {{ i.name }}
+          <td>  {{ i.name }}</td>
         </td>
-        <td>{{ i.message }}</td>
         <td>{{ i.station }}</td>
-        <td>{{ i.username }}</td>
+        <td>{{ i.username}}<br>{{ i.place}}<br>{{ i.district }}</td>
     </tr>
     {% endfor %}
 </table>

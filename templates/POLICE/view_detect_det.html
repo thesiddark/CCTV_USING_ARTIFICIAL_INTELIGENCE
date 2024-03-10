@@ -20,9 +20,10 @@
         <td>s/no</td>
         <td>Date</td>
         <td>Time</td>
-        <td>Criminal</td>
+        <td>Photo</td>
+        <td>Criminal Name</td>
         <td>Police Station</td>
-        <td>wheren</td>
+        <td>Location</td>
 
     </tr>
    {% for i in data %}
@@ -31,10 +32,10 @@
         <td>{{ i.date }}</td>
         <td>{{ i.time }}</td>
         <td><img src="{{ i.photo }}" height="100px" width="100px" style="border-radius: 8px;">
-            {{ i.name }}
+          <td>  {{ i.name }}</td>
         </td>
         <td>{{ i.station }}</td>
-        <td>{{ i.username }}</td>
+        <td>{{ i.username}}<br>{{ i.place}}<br>{{ i.district }}</td>
     </tr>
     {% endfor %}
 </table>

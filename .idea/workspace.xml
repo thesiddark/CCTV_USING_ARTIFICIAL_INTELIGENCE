@@ -7,11 +7,11 @@
     <list default="true" id="dbb56032-592c-4106-8deb-91d68488d2c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/models.py" afterPath="$PROJECT_DIR$/myapp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/urls.py" afterPath="$PROJECT_DIR$/myapp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/views.py" afterPath="$PROJECT_DIR$/myapp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ADMIN/admin complaints.html" afterPath="$PROJECT_DIR$/templates/ADMIN/admin complaints.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html" afterPath="$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/ADMIN/view_detect_det.html" afterPath="$PROJECT_DIR$/templates/ADMIN/view_detect_det.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/POLICE/view_detect_det.html" afterPath="$PROJECT_DIR$/templates/POLICE/view_detect_det.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/POLICE/view_deteted_unknown.html" afterPath="$PROJECT_DIR$/templates/POLICE/view_deteted_unknown.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,18 +46,8 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
               <caret line="47" column="90" lean-forward="false" selection-start-line="47" selection-start-column="90" selection-end-line="47" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="1084" column="52" lean-forward="true" selection-start-line="1084" selection-start-column="52" selection-end-line="1084" selection-end-column="67" />
               <folding>
-                <element signature="e#0#55#0" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,26 +56,28 @@
       <file leaf-file-name="view_detect_det.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/POLICE/view_detect_det.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-              <folding>
-                <element signature="e#728#734#0#HTML" expanded="true" />
-                <element signature="e#734#740#0#HTML" expanded="true" />
-                <element signature="e#740#746#0#HTML" expanded="true" />
-                <element signature="e#746#752#0#HTML" expanded="true" />
-                <element signature="e#752#758#0#HTML" expanded="true" />
-                <element signature="e#758#764#0#HTML" expanded="true" />
-                <element signature="e#764#770#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="368">
+              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Admin_index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/ADMIN/Admin_index.html">
+      <file leaf-file-name="view_deteted_unknown.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/POLICE/view_deteted_unknown.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-403">
-              <caret line="109" column="66" lean-forward="false" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
+            <state relative-caret-position="504">
+              <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_detect_det.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/ADMIN/view_detect_det.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="43" column="68" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="43" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -94,8 +86,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="105" column="6" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
+            <state relative-caret-position="210">
+              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -104,19 +96,21 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state relative-caret-position="571">
+              <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin complaints.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin complaints.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-              <folding />
+            <state relative-caret-position="308">
+              <caret line="1067" column="111" lean-forward="false" selection-start-line="1067" selection-start-column="103" selection-end-line="1067" selection-end-column="111" />
+              <folding>
+                <element signature="e#0#55#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -207,7 +201,6 @@
         <option value="$PROJECT_DIR$/Aicctv/settings.py" />
         <option value="$PROJECT_DIR$/templates/POLICE/Police_index.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/view_deteted_unknown.html" />
-        <option value="$PROJECT_DIR$/templates/POLICE/view_deteted_unknown.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/admin view criminals.html" />
         <option value="$PROJECT_DIR$/templates/POLICE/police view criminals.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/admin suspicious activity.html" />
@@ -217,13 +210,14 @@
         <option value="$PROJECT_DIR$/templates/POLICE/police change password.html" />
         <option value="$PROJECT_DIR$/templates/loginindex.html" />
         <option value="$PROJECT_DIR$/templates/ADMIN/Admin_index.html" />
-        <option value="$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html" />
-        <option value="$PROJECT_DIR$/myapp/models.py" />
-        <option value="$PROJECT_DIR$/templates/ADMIN/view_detect_det.html" />
-        <option value="$PROJECT_DIR$/templates/POLICE/view_detect_det.html" />
         <option value="$PROJECT_DIR$/myapp/urls.py" />
-        <option value="$PROJECT_DIR$/myapp/views.py" />
         <option value="$PROJECT_DIR$/templates/ADMIN/admin complaints.html" />
+        <option value="$PROJECT_DIR$/myapp/models.py" />
+        <option value="$PROJECT_DIR$/templates/POLICE/view_detect_det.html" />
+        <option value="$PROJECT_DIR$/templates/ADMIN/view_detect_det.html" />
+        <option value="$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html" />
+        <option value="$PROJECT_DIR$/templates/POLICE/view_deteted_unknown.html" />
+        <option value="$PROJECT_DIR$/myapp/views.py" />
       </list>
     </option>
   </component>
@@ -255,98 +249,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="POLICE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ADMIN" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Aicctv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="media" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -574,6 +476,98 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="POLICE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ADMIN" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aicctv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="media" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -581,7 +575,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/PROJ-camera,susp_sctivity-/detect suspicious activity" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="view_detect_det&#9;null&#9;null&#10;loginpage&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;/myapp/static/Home/assets/images/loginpage.jpg&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;myapp/static/Home/assets/images/loginpage.jpg&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;--orange&#9;null&#9;null&#10;fd7e14&#9;null&#9;null&#10;#fd7e14&#9;null&#9;null&#10;orange&#9;null&#9;null&#10;#FFA500&#9;null&#9;null&#10;.invalid-feedback&#9;null&#9;null&#10; fa-camera&#9;null&#9;null&#10;fa-camera&#9;null&#9;null&#10;logo&#9;null&#9;null&#10;image&#9;null&#9;null&#10;icon-bar&#9;null&#9;null&#10;navbar-brand&#9;null&#9;null&#10;waypoints&#9;null&#9;null&#10;/static/Home/assets/js/waypoints.js&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/js/waypoints.js" />
+    <property name="SearchEverywhereHistoryKey" value="p_&#9;null&#9;null&#10;unknown&#9;null&#9;null&#10;view_detect_det&#9;null&#9;null&#10;p_view_detect_det&#9;null&#9;null&#10;loginpage&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;/myapp/static/Home/assets/images/loginpage.jpg&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;myapp/static/Home/assets/images/loginpage.jpg&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/images/loginpage.jpg&#10;--orange&#9;null&#9;null&#10;fd7e14&#9;null&#9;null&#10;#fd7e14&#9;null&#9;null&#10;orange&#9;null&#9;null&#10;#FFA500&#9;null&#9;null&#10;.invalid-feedback&#9;null&#9;null&#10; fa-camera&#9;null&#9;null&#10;fa-camera&#9;null&#9;null&#10;logo&#9;null&#9;null&#10;image&#9;null&#9;null&#10;icon-bar&#9;null&#9;null&#10;navbar-brand&#9;null&#9;null&#10;waypoints&#9;null&#9;null&#10;/static/Home/assets/js/waypoints.js&#9;FILE&#9;file://C:/Users/sidharth/Documents/GitHub/Aicctv/myapp/static/Home/assets/js/waypoints.js" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
   </component>
   <component name="RecentsManager">
@@ -933,17 +927,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361976" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49785176" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.187567" sideWeight="0.6621912" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.187567" sideWeight="0.6638024" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49570355" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49785176" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.187567" sideWeight="0.33780882" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.187567" sideWeight="0.33619764" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39958376" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16004297" sideWeight="0.50574714" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -964,11 +959,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32394367" sideWeight="0.66232353" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.187567" sideWeight="0.6638024" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49570355" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.49785176" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32394367" sideWeight="0.33767644" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2339848" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.187567" sideWeight="0.33619764" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23684211" sideWeight="0.49425286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298647" sideWeight="0.49791667" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -992,26 +987,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myapp/views.py</url>
-          <line>528</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myapp/views.py</url>
           <line>262</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myapp/views.py</url>
-          <line>1082</line>
+          <line>1083</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/myapp/views.py</url>
-          <line>1091</line>
+          <line>1092</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1134,14 +1124,6 @@
     <entry file="file://$PROJECT_DIR$/templates/USER/user chat.html" />
     <entry file="file://$PROJECT_DIR$/templates/USER/user view criminals.html" />
     <entry file="file://$PROJECT_DIR$/templates/USER/user view family member.html" />
-    <entry file="file://$PROJECT_DIR$/templates/POLICE/view_deteted_unknown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Aicctv/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-44">
@@ -1181,84 +1163,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/loginindex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="47" column="90" lean-forward="false" selection-start-line="47" selection-start-column="90" selection-end-line="47" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/Admin_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-403">
-          <caret line="109" column="66" lean-forward="false" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Aicctv/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1449">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/ADMIN/view_detect_det.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/POLICE/view_detect_det.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          <folding>
-            <element signature="e#728#734#0#HTML" expanded="true" />
-            <element signature="e#734#740#0#HTML" expanded="true" />
-            <element signature="e#740#746#0#HTML" expanded="true" />
-            <element signature="e#746#752#0#HTML" expanded="true" />
-            <element signature="e#752#758#0#HTML" expanded="true" />
-            <element signature="e#758#764#0#HTML" expanded="true" />
-            <element signature="e#764#770#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="1084" column="52" lean-forward="true" selection-start-line="1084" selection-start-column="52" selection-end-line="1084" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="111" column="0" lean-forward="true" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="105" column="6" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1271,8 +1179,86 @@
     <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin complaints.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/loginindex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="47" column="90" lean-forward="false" selection-start-line="47" selection-start-column="90" selection-end-line="47" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/Admin_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="109" column="66" lean-forward="false" selection-start-line="109" selection-start-column="66" selection-end-line="109" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/view_detect_det.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="43" column="68" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="43" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/POLICE/view_detect_det.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/ADMIN/admin_view_deteted_unknown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="e#750#756#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/POLICE/view_deteted_unknown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="1067" column="111" lean-forward="false" selection-start-line="1067" selection-start-column="103" selection-end-line="1067" selection-end-column="111" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
