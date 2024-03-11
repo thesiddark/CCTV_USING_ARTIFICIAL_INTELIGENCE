@@ -110,7 +110,7 @@ urlpatterns = [
     path('View_Detected_Unknown/', views.View_Detected_unknown),
     path('View_Detected_Unknown_search/', views.View_Detected_unknown_search),
 
-
+     path('send_report/', views.send_anonymous),
     path('logout/', views.logout),
 
 ]

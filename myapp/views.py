@@ -968,6 +968,8 @@ def user_view_criminals(request):
             'place':i.place,
             'details':i.details,
             'photo':i.photo,
+            'station':i.POLICE.station_name,
+            "phno":i.POLICE.phone
 
         })
     return JsonResponse({'status': 'ok','data':l})
@@ -1138,7 +1140,7 @@ def View_Detected_Criminal(request):
     robj=detection.objects.filter(USER__LOGIN_id=lid,type='criminal')
     l=[]
     for i in robj:
-        l.append({'id':i.id,'name':i.name,'photo':i.photo,'date':i.date,'time':i.time})
+        l.append({'id':i.id,'name':i.name,'photo':i.photo,'date':i.date,'time':i.time,"place": "{}, {} ,{}".format(i.USER.place,i.USER.post,i.USER.pin)})
     print(l)
     return JsonResponse({'status': "ok",'data':l})
 
@@ -1164,3 +1166,16 @@ def p_view_detect_unknown(request):
         return render(request, 'POLICE/view_deteted_unknown.html', {"data": l})
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
+
+
+#public
+def send_anonymous(request):
+    complaint = request.POST['report']
+    res = Anonymous()
+    res.report = complaint
+    res.note = 'pending'
+    res.status = 'not reviewed'
+    from datetime import datetime
+    res.date = datetime.now().strftime('%Y-%m-%d')
+    res.save()
+    return JsonResponse({'status': 'ok'})

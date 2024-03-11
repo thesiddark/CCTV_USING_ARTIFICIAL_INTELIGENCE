@@ -41,6 +41,12 @@ class Complaints(models.Model):
     status= models.CharField(max_length=100)
     reply= models.CharField(max_length=100)
 
+class Anonymous(models.Model):
+    date= models.DateField()
+    report= models.CharField(max_length=100)
+    status= models.CharField(max_length=100)
+
+
 
 
 class Criminals(models.Model):
