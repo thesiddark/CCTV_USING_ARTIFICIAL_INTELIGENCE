@@ -1,0 +1,18 @@
+{% extends 'POLICE/Police_index.html' %}
+{% block body %}
+<form action="/myapp/p_send_reply_post/" method="post">
+    {% csrf_token %}
+<table class="table table-bordered">
+  <tr>
+      <input type="hidden"name="cid"value="{{ id }}">
+   <th>Reply Message</th>
+      <td><textarea class="form-control" name="reply"required></textarea></td>
+  </tr>
+  <tr align="center">
+    <td colspan="2">
+      <input type="submit" class="btn btn-info" name="button" id="button" value="SEND" />
+    </td>
+  </tr>
+</table>
+</form>
+{% endblock %}

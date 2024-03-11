@@ -1058,6 +1058,40 @@ def search_view_detect_det(request):
 
 
 #police
+
+#complaint
+def police_complaints(request):
+    if request.session['lid']=='':
+        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+    var = Complaints.objects.all()
+
+    return render(request,'POLICE/police complaint view.html',{'data':var})
+
+def police_complaints_post(request):
+    if request.session['lid']=='':
+
+        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+
+    fromdate=request.POST['from']
+    todate = request.POST['to']
+    var = Complaints.objects.filter(date__range=[fromdate,todate])
+    return render(request, 'POLICE/police complaint view.html', {'data': var})
+
+
+def police_send_reply(request, id):
+    if request.session['lid']=='':
+        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+
+    return render(request, "POLICE/p_send reply.html", {'id': id})
+def police_send_reply_post(request):
+    if request.session['lid']=='':
+        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+
+    reply = request.POST['reply']
+    id = request.POST['cid']
+    res = Complaints.objects.filter(id=id).update(reply=reply, status="replied")
+    return HttpResponse(        '''<script>alert("sending");window.location='/myapp/complaints/'</script>''')
+#
 def p_view_detect_det(request):
     if request.session['lid'] != '':
         cobj = detection.objects.filter(type='criminal').order_by('-time')

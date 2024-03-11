@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>AICCTV</title>
 </head>
 {% extends 'POLICE/Police_index.html' %}
 {% block body %}
@@ -37,7 +37,7 @@
     <td><img src="{{ i.photo2 }}"height="60px" width="60px"> </td>
            <td>{{ i.details }}</td>
     <td>{{ i.name }}<br>{{ i.place }}<br>{{i.pin }}<br>{{ i.district }}</td>
-           <td><a href="/myapp/police_edit_criminals/{{ i.id }}" class="btnb btn-info">Edit</a> </td>
+           <td><a href="/myapp/police_edit_criminals/{{ i.id }}" class="btn btn-info">Edit</a> </td>
            <td><a href="/myapp/police_delete_criminal/{{ i.id }}" onclick="return confirm('Are You Sure!!!')" class="btn btn-danger">Delete</a> </td>
       {% endfor %}
   </tr>

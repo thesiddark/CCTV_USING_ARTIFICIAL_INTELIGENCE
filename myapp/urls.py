@@ -65,6 +65,11 @@ urlpatterns = [
     path('search_view_detect_det/',views.search_view_detect_det),
     path('p_view_detected_unknown/',views.p_view_detect_unknown),
 
+    path('p_complaints/', views.police_complaints),
+    path('p_complaints_post/', views.police_complaints_post),
+    path('p_send_reply_post/', views.police_send_reply_post),
+    path('p_send_reply/<id>', views.police_send_reply),
+
     path('user_edit_profile_get/',views.user_edit_profile_get),
 
 
