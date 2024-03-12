@@ -1179,3 +1179,35 @@ def send_anonymous(request):
     res.date = datetime.now().strftime('%Y-%m-%d')
     res.save()
     return JsonResponse({'status': 'ok'})
+
+def view_anonymous(request):
+    if request.session['lid']=='':
+        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+    var = Anonymous.objects.all()
+
+    return render(request,'POLICE/annonymose_report.html',{'data':var})
+
+def police_anonymous_post(request):
+    if request.session['lid']=='':
+
+        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+
+    fromdate=request.POST['from']
+    todate = request.POST['to']
+    var = Complaints.objects.filter(date__range=[fromdate,todate])
+    return render(request, 'POLICE/annonymose_report.html', {'data': var})
+
+def police_send_notes(request, id):
+    if request.session['lid']=='':
+        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+
+    return render(request, "POLICE/p_sendnote.html", {'id': id})
+
+def police_send_notes_post(request):
+    if request.session['lid']=='':
+        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+
+    report = request.POST['report']
+    id = request.POST['cid']
+    res = Anonymous.objects.filter(id=id).update(report=report, status="Attended")
+    return HttpResponse(        '''<script>alert("sending");window.location='/myapp/complaints/'</script>''')

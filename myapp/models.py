@@ -45,6 +45,7 @@ class Anonymous(models.Model):
     date= models.DateField()
     report= models.CharField(max_length=100)
     status= models.CharField(max_length=100)
+    notes = models.CharField(max_length=100)
 
 
 
