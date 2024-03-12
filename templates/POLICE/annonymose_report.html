@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AICCTV</title>
+</head>
+{% extends 'POLICE/Police_index.html' %}
+{% block body %}
+<body><div align="center">
+    <div>
+        <h1 style="font-weight: bold; background: linear-gradient(to right, #252525, #252525); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0px 0px 0px #000, 0px 0px 0px #252525, 0px 0px 0px #000, 0px 0px 0px #252525;">ANONYMOUS REPORT</h1>
+    </div>
+</div><br>
+<form id="form1" name="form1" method="post" action="/myapp/p_complaints_post/">
+{% csrf_token %}
+<table class="pull-left">
+  <tr>
+    <td style="padding-right: 20px;">From Date</td>
+    <td style="padding-right: 20px;">
+      <input type="date" name="from" id="textfield" value="2024-01-01"/></td>
+    <td style="padding-right: 20px;">To date</td>
+    <td style="padding-right: 20px;">
+      <input type="date" name="to" id="textfield2" value="2024-01-01"/></td>
+        <td><input type="submit" name="button" id="button" value="Search" class="btn btn-info"/></td>
+
+  </tr>
+</table><br><br>
+    <table class="table table-bordered">
+  <tr>
+    <td>SI NO</td>
+    <td>DATE</td>
+    <td>COMPLAINT</td>
+    <td>STATUS</td>
+
+  </tr>
+    {% for i in data %}
+  <tr>
+    <td>{{forloop.counter  }}&nbsp;</td>
+    <td>&nbsp;{{ i.date }}</td>
+    <td>{{ i.report }}</td>
+    <td>{{ i.status }}</td>
+
+    <td>{{ i.notes }}</td>
+      <td>
+          <a href="/myapp/send_note/{{ i.id }}" class="btn btn-success">Add Note</a>
+
+
+      </td>
+  </tr>
+    {% endfor %}
+</table>
+</form>
+</body>{% endblock %}
+</html>
