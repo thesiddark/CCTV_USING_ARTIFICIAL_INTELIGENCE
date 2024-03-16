@@ -60,6 +60,7 @@ class Criminals(models.Model):
     gender= models.CharField(max_length=100)
     post= models.CharField(max_length=100)
     district= models.CharField(max_length=100)
+    threatlevel = models.CharField(max_length=100)
     pin= models.BigIntegerField()
     POLICE= models.ForeignKey(Police_Station,on_delete=models.CASCADE)
 
@@ -119,5 +120,6 @@ class detection(models.Model):
     photo= models.CharField(max_length=100,default='')
     did= models.IntegerField()
     USER = models.ForeignKey(User, on_delete=models.CASCADE)
+
 
 

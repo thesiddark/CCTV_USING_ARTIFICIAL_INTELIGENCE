@@ -1,6 +1,7 @@
 from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
+from django.db.models import Q
 from django.shortcuts import render, redirect
 
 from myapp.models import *
@@ -329,6 +330,7 @@ def police_add_criminals_post(request):
     photo = request.FILES['photo']
     photo1 = request.FILES['photo1']
     photo2= request.FILES['photo2']
+    threatlevel = request.POST['threatlevel']
     details = request.POST['details']
 
 
@@ -358,6 +360,7 @@ def police_add_criminals_post(request):
     obj.pin=pin
     obj.details=details
     obj.district=district
+    obj.threatlevel = threatlevel
     obj.post=post
     obj.gender=gender
     obj.photo=path
@@ -605,7 +608,10 @@ def chat1(request,id):
     request.session["new"] = cid
     qry = User.objects.get(LOGIN=cid)
 
-    return render(request, "POLICE/Chat.html", {'photo': qry.photo, 'name': qry.name, 'toid': cid})
+    chat_messages = Chat.objects.filter(Q(FROMID_id=cid) | Q (TOID_id=cid)).order_by('id')
+
+    return render(request, "POLICE/Chat.html",
+                  {'photo': qry.photo, 'name': qry.name, 'toid': cid, 'chat_messages': chat_messages})
 
 def chat_view(request):
     fromid = request.session["lid"]
@@ -618,7 +624,7 @@ def chat_view(request):
 
     for i in res:
         l.append({"id": i.id, "message": i.message, "to": i.TOID_id, "date": i.date, "from": i.FROMID_id})
-
+    l.reverse()
     return JsonResponse({'photo': qry.photo, "data": l, 'name': qry.name, 'toid': request.session["userid"]})
 
 def chat_send(request, msg):
@@ -636,8 +642,6 @@ def chat_send(request, msg):
     chatobt.save()
 
     return JsonResponse({"status": "ok"})
-
-
 
 
 def User_sendchat(request):
@@ -668,7 +672,7 @@ def User_viewchat(request):
 
     for i in res:
         l.append({"id": i.id, "msg": i.message, "from": i.FROMID_id, "date": i.date, "to": i.TOID_id})
-
+    l.reverse()
     return JsonResponse({"status":"ok",'data':l})
 
 # users
@@ -967,6 +971,7 @@ def user_view_criminals(request):
             'gender':i.gender,
             'place':i.place,
             'details':i.details,
+            'threatlevel':i.threatlevel,
             'photo':i.photo,
             'station':i.POLICE.station_name,
             "phno":i.POLICE.phone
@@ -1211,3 +1216,24 @@ def police_send_notes_post(request):
     id = request.POST['cid']
     res = Anonymous.objects.filter(id=id).update(report=report, status="Attended")
     return HttpResponse(        '''<script>alert("sending");window.location='/myapp/complaints/'</script>''')
+
+def public_view_criminals(request):
+    res=Criminals.objects.exclude(threatlevel='LOW')
+    l=[]
+    for i in res:
+        l.append({
+            'id':i.id,
+            'name':i.name,
+            'gender':i.gender,
+            'place':i.place,
+            'details':i.details,
+            'threatlevel':i.threatlevel,
+            'photo':i.photo,
+            'station':i.POLICE.station_name,
+            "phno":i.POLICE.phone
+
+        })
+    return JsonResponse({'status': 'ok','data':l})
+
+
+

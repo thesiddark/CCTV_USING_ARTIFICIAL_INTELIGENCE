@@ -117,5 +117,7 @@ urlpatterns = [
     path('police_anonymous/', views.police_anonymous_post),
     path('send_note_post/',views.police_send_notes_post),
     path('send_note/<id>',views.police_send_notes),
+    path('public_view_criminals/', views.public_view_criminals),
+
 
 ]
