@@ -533,7 +533,8 @@ def police_suspicious_activity(request):
     if request.session['lid']=='':
         return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
 
-    var = SuspiciousActivities.objects.filter(CRIMINAL__POLICE__LOGIN_id=request.session['lid'])
+    # var = SuspiciousActivities.objects.filter(CRIMINAL__POLICE__LOGIN_id=request.session['lid'])
+    var = SuspiciousActivities.objects.all()
     return render(request,'POLICE/police suspicious activity.html',{'data':var})
 
 def police_suspicious_activity_post(request):
@@ -1237,3 +1238,19 @@ def public_view_criminals(request):
 
 
 
+
+
+
+def view_notification(request):
+    nid=request.POST['nid']
+    lid=request.POST['lid']
+    i=detection.objects.filter(id__gt=nid,USER__LOGIN_id=lid).order_by('id')
+    if i.exists():
+        # i=i[0]
+        i=i[0]
+
+
+
+        return JsonResponse({'status':'ok','nid':str(i.id),'message': i.type})
+    else:
+        return JsonResponse({'status':'no'})

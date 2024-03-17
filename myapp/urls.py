@@ -120,4 +120,7 @@ urlpatterns = [
     path('public_view_criminals/', views.public_view_criminals),
 
 
+    path('view_notification/', views.view_notification),
+
+
 ]

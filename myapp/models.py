@@ -71,7 +71,7 @@ class SuspiciousActivities(models.Model):
     place= models.CharField(max_length=100)
     time= models.CharField(max_length=100)
     photo= models.CharField(max_length=500)
-    CRIMINAL= models.ForeignKey(Criminals,on_delete=models.CASCADE)
+    # CRIMINAL= models.ForeignKey(Criminals,on_delete=models.CASCADE)
     activity= models.CharField(max_length=100)
 
 class review(models.Model):
