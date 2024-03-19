@@ -1,39 +1,82 @@
 {% extends 'POLICE/Police_index.html' %}
 {% block body %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+    .row {
+        margin-bottom: 20px;
+    }
+    .col-lg-5, .col-lg-2 {
+        padding: 0 10px;
+    }
+    input[type="date"] {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    .btn-success {
+        padding: 8px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+    .btn-success:hover {
+        background-color: #45a049;
+    }
+    table {
+        margin: auto;
+        border-collapse: collapse;
+        width: 80%;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: center;
+    }
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    img {
+        border-radius: 8px;
+    }
+</style>
 
 <div class="row">
-        <form class="d-flex" role="search" method="post" action="/myapp/p_search_view_detect_det/#abc">
-        <div class="col-lg-5" >
-                 {% csrf_token %}
+    <form class="d-flex" role="search" method="post" action="/myapp/p_search_view_detect_det/#abc">
+        <div class="col-lg-5">
+            {% csrf_token %}
             From
-              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="fdate"  value="2024-03-08">
+            <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="fdate" value="2024-03-08">
         </div>
-        <div class="col-lg-5">To
-              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate" value="2024-03-08">
-        </div><br>
+        <div class="col-lg-5">
+            To
+            <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate" value="2024-03-08">
+        </div>
         <div class="col-lg-2">
-          <button class="btn btn-success" type="submit">Search</button>
-        </div><br><br>
-        </form>
-    </div><br><br>
-    <table class="table table-striped">
+            <button class="btn btn-success" type="submit">Search</button>
+        </div>
+    </form>
+</div>
+
+<table class="table table-striped">
     <tr>
         <td>s/no</td>
         <td>Date</td>
         <td>Time</td>
         <td>Photo</td>
         <td>Location</td>
-
     </tr>
-   {% for i in data %}
+    {% for i in data %}
     <tr>
         <td>{{ forloop.counter }}</td>
         <td>{{ i.date }}</td>
         <td>{{ i.time }}</td>
-        <td><img src="{{ i.photo }}" height="100px" width="100px" style="border-radius: 8px;">
-            {{ i.name }}
-        </td>
-    <td>{{ i.username}}<br>{{ i.place}}<br>{{ i.district }}</td>
+        <td><img src="{{ i.photo }}" height="100px" width="100px"></td>
+        <td>{{ i.username }}<br>{{ i.place }}<br>{{ i.district }}</td>
     </tr>
     {% endfor %}
 </table>

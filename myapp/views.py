@@ -1010,16 +1010,15 @@ def user_view_suspicious(request):
             'photo': i.photo,
             'activity': i.activity,
             'place': i.place,
-            'name': i.CRIMINAL.name,
+          # 'name': i.CRIMINAL.name,
 
         })
     return JsonResponse({'status': 'ok', 'data': l})
 
 
 def forward_suspicious_activity_post(request):
-    dates=request.POST['date']
+    date=request.POST['date']
     time=request.POST['time']
-    criminal=request.POST['cr']
     place=request.POST['place']
     activity=request.POST['activity']
     photo=request.FILES['photo']
@@ -1031,10 +1030,9 @@ def forward_suspicious_activity_post(request):
     path = fs.url(date)
 
     obj=SuspiciousActivities()
-    obj.date=dates
+    obj.date=date
     obj.time=time
     obj.activity=activity
-    obj.CRIMINAL_id=criminal
     obj.photo=path
     obj.place=place
     obj.save()

@@ -2,44 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>AI CCTV</title>
 </head>
 {% extends 'POLICE/Police_index.html' %}
 {% block body %}
-<body>
-<form>
-    <table class="table table-bordered">
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0;">
+ <div style="text-align: center; margin-top: 50px;">
+        <h1 style="font-weight: bold; background: linear-gradient(to right, #252525, #252525); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0px 0px 0px #000, 0px 0px 0px #252525, 0px 0px 0px #000, 0px 0px 0px #252525;">STATION DETAILS</h1>
+    </div>
+<form style="margin: 0 auto; width: 50%; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
         <tr>
-            <td>Police Station Name</td>
-            <td>{{ data.station_name }}</td>
+            <td style="width: 40%; font-weight: bold; padding: 10px;">Police Station Name</td>
+            <td style="padding: 10px;">{{ data.station_name }}</td>
         </tr>
          <tr>
-            <td>SI Name</td>
-            <td>{{ data.SI_name }}</td>
+            <td style="font-weight: bold; padding: 10px;">SI Name</td>
+            <td style="padding: 10px;">{{ data.SI_name }}</td>
         </tr>
          <tr>
-            <td>Place</td>
-            <td>{{ data.place }}</td>
+            <td style="font-weight: bold; padding: 10px;">Place</td>
+            <td style="padding: 10px;">{{ data.place }}</td>
         </tr>
          <tr>
-            <td>Post</td>
-            <td>{{ data.post }}</td>
+            <td style="font-weight: bold; padding: 10px;">Post</td>
+            <td style="padding: 10px;">{{ data.post }}</td>
         </tr>
          <tr>
-            <td>Pin</td>
-            <td>{{ data.pin }}</td>
+            <td style="font-weight: bold; padding: 10px;">Pin</td>
+            <td style="padding: 10px;">{{ data.pin }}</td>
         </tr>
          <tr>
-            <td>District</td>
-            <td>{{ data.district }}</td>
+            <td style="font-weight: bold; padding: 10px;">District</td>
+            <td style="padding: 10px;">{{ data.district }}</td>
         </tr>
          <tr>
-            <td>Email</td>
-            <td>{{ data.email_id }}</td>
+            <td style="font-weight: bold; padding: 10px;">Email</td>
+            <td style="padding: 10px;">{{ data.email_id }}</td>
         </tr>
          <tr>
-            <td>Phone</td>
-            <td>{{ data.phone }}</td>
+            <td style="font-weight: bold; padding: 10px;">Phone</td>
+            <td style="padding: 10px;">{{ data.phone }}</td>
         </tr>
     </table>
 </form>

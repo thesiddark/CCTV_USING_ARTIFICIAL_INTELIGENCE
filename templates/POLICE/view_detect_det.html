@@ -1,43 +1,49 @@
 {% extends 'POLICE/Police_index.html' %}
 {% block body %}
 
-<div class="row">
+<div class="container">
+    <div class="row">
         <form class="d-flex" role="search" method="post" action="/myapp/p_search_view_detect_det/#abc">
-        <div class="col-lg-5">
-                 {% csrf_token %}From
-              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="fdate" value="2024-03-08">
-        </div>
-        <div class="col-lg-5">To
-              <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate" value="2024-03-08" >
-        </div><br>
-        <div class="col-lg-2">
-          <button class="btn btn-success" type="submit">Search</button>
-        </div><br><br>
+            <div class="col-lg-5">
+                {% csrf_token %}
+                From
+                <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="fdate" value="2024-03-08">
+            </div>
+            <div class="col-lg-5">To
+                <input class="form-control me-2" type="date" placeholder="Search" aria-label="Search" name="tdate" value="2024-03-08">
+            </div>
+            <div class="col-lg-2">
+                <button class="btn btn-success" type="submit">Search</button>
+            </div>
         </form>
-    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <br>
     <table class="table table-striped">
-    <tr>
-        <td>s/no</td>
-        <td>Date</td>
-        <td>Time</td>
-        <td>Photo</td>
-        <td>Criminal Name</td>
-        <td>Police Station</td>
-        <td>Location</td>
-
-    </tr>
-   {% for i in data %}
-    <tr>
-        <td>{{ forloop.counter }}</td>
-        <td>{{ i.date }}</td>
-        <td>{{ i.time }}</td>
-        <td><img src="{{ i.photo }}" height="100px" width="100px" style="border-radius: 8px;">
-          <td>  {{ i.name }}</td>
-        </td>
-        <td>{{ i.station }}</td>
-        <td>{{ i.username}}<br>{{ i.place}}<br>{{ i.district }}</td>
-    </tr>
-    {% endfor %}
-</table>
+        <thead>
+            <tr>
+                <th>S/no</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Photo</th>
+                <th>Criminal Name</th>
+                <th>Police Station</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in data %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                <td>{{ i.date }}</td>
+                <td>{{ i.time }}</td>
+                <td><img src="{{ i.photo }}" height="100px" width="100px" style="border-radius: 8px;"></td>
+                <td>{{ i.name }}</td>
+                <td>{{ i.station }}</td>
+                <td>{{ i.username}}<br>{{ i.place}}<br>{{ i.district }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
 
 {% endblock %}

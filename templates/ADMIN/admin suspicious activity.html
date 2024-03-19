@@ -31,7 +31,6 @@
     <td>PLACE</td>
     <td>TIME</td>
     <td>PHOTO</td>
-    <td>CRIMINAL INFO/RECORDS</td>
     <td>ACTIVITY</td>
   </tr>
     {% for i in data %}
@@ -40,8 +39,7 @@
     <td>{{ i.date }}</td>
     <td>&nbsp;{{ i.place }}</td>
     <td>&nbsp;{{ i.time }}</td>
-    <td><img src="{{ i.photo }}"  height="60px" width="60px" alt=""/></td>
-    <td>{{ i.CRIMINAL.name }}</td>
+    <td><img src="{{ i.photo }}"  height="100px" width="100px" alt=""/></td>
     <td>{{ i.activity }}</td>
   </tr>
     {% endfor %}

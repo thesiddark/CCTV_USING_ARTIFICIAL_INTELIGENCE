@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -6,46 +6,43 @@
 </head>
 {% extends 'POLICE/Police_index.html' %}
 {% block body %}
-<body>
-<form id="form1" name="form1" method="post" action="/myapp/police_view_criminals_post/">
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0;">
+<form id="form1" name="form1" method="post" action="/myapp/police_view_criminals_post/" style="margin-bottom: 20px;">
     {% csrf_token %}
-    <table class="pull-left">
-  <tr>
-    <td style="padding-right: 20px;">Name :</td>
-    <td style="padding-right: 20px;">
-      <input type="text" name="name" id="textfield" class="form-control"/></td>
-    <td><input type="submit" name="button" id="button" value="GO" class="btn btn-success" /></td>
-  </tr>
-</table>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <table class="table table-bordered">
-  <tr></tr>
-  <tr>
-    <td>SN NO</td>
-    <td>PHOTO-1</td>
-    <td>PHOTO-2</td>
-    <td>PHOTO-3</td>
-      <td> Threat level</td>
-    <td>DETAILS</td>
-
-    <td>CRIMINALS</td>
-
-      <td></td>
-      <td></td>
-  </tr>
-       {% for i in data %}
-  <tr>
-    <td>{{forloop.counter  }}</td>
-    <td><img src="{{ i.photo }}"height="60px" width="60px"> </td>
-    <td><img src="{{ i.photo1 }}"height="60px" width="60px"> </td>
-    <td><img src="{{ i.photo2 }}"height="60px" width="60px"> </td>
-           <td>{{ i.threatlevel }}</td>
-           <td>{{ i.details }}</td>
-           <td><br>{{i.pin }}<br>{{ i.district }}</td>
-           <td><a href="/myapp/police_edit_criminals/{{ i.id }}" class="btn btn-info">Edit</a> </td>
-           <td><a href="/myapp/police_delete_criminal/{{ i.id }}" onclick="return confirm('Are You Sure!!!')" class="btn btn-danger">Delete</a> </td>
-      {% endfor %}
-  </tr>
-  </table>
+    <table style="margin: 0 auto;">
+        <tr>
+            <td style="padding-right: 20px;">Name :</td>
+            <td style="padding-right: 20px;">
+                <input type="text" name="name" id="textfield" style="padding: 5px; border: 1px solid #ccc; border-radius: 5px;"/></td>
+            <td><input type="submit" name="button" id="button" value="GO" style="padding: 5px 10px; background-color: #28a745; color: #fff; border: none; border-radius: 5px; cursor: pointer;" /></td>
+        </tr>
+    </table>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <tr>
+            <th style="padding: 10px; background-color: #f8f9fa;">SN NO</th>
+            <th style="padding: 10px; background-color: #f8f9fa;">PHOTO-1</th>
+            <th style="padding: 10px; background-color: #f8f9fa;">PHOTO-2</th>
+            <th style="padding: 10px; background-color: #f8f9fa;">PHOTO-3</th>
+            <th style="padding: 10px; background-color: #f8f9fa;">Threat level</th>
+            <th style="padding: 10px; background-color: #f8f9fa;">DETAILS</th>
+            <th style="padding: 10px; background-color: #f8f9fa;">CRIMINALS</th>
+            <th style="padding: 10px; background-color: #f8f9fa;"></th>
+            <th style="padding: 10px; background-color: #f8f9fa;"></th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td style="padding: 10px;">{{ forloop.counter }}</td>
+            <td style="padding: 10px;"><img src="{{ i.photo }}" alt="PHOTO-1" style="height: 60px; width: 60px;"></td>
+            <td style="padding: 10px;"><img src="{{ i.photo1 }}" alt="PHOTO-2" style="height: 60px; width: 60px;"></td>
+            <td style="padding: 10px;"><img src="{{ i.photo2 }}" alt="PHOTO-3" style="height: 60px; width: 60px;"></td>
+            <td style="padding: 10px;">{{ i.threatlevel }}</td>
+            <td style="padding: 10px;">{{ i.details }}</td>
+            <td style="padding: 10px;"><br>{{ i.pin }}<br>{{ i.district }}</td>
+            <td style="padding: 10px;"><a href="/myapp/police_edit_criminals/{{ i.id }}" style="padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px;">Edit</a></td>
+            <td style="padding: 10px;"><a href="/myapp/police_delete_criminal/{{ i.id }}" onclick="return confirm('Are You Sure!!!')" style="padding: 5px 10px; background-color: #dc3545; color: #fff; text-decoration: none; border-radius: 5px;">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
 </form>
 </body>
 {% endblock %}

@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -6,70 +6,64 @@
 </head>
 {% extends 'POLICE/Police_index.html' %}
 {% block body %}
-<body>
-<form action="/myapp/police_add_criminals_post/" method="post" enctype="multipart/form-data">
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0;">
+<form action="/myapp/police_add_criminals_post/" method="post" enctype="multipart/form-data" style="margin: 0 auto; width: 50%; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
     {% csrf_token %}
-    <table class="table table-bordered">
-  <tr>
-    <th>Name</th>
-    <td><input name="name" type="text" class="form-control" required/></td>
-  </tr>
-
-    <tr>
-        <td>Gender</td>
-        <td><input type="radio" name="gender" value="Male" checked/>Male<br>
-        <input type="radio" name="gender" value="Female">Female<br>
-        <input type="radio" name="gender" value="Other">Other<br>
-        </td>
-    </tr>
-
-     <tr>
-    <th>Place</th>
-    <td><input name="place" type="text"  class="form-control"required/></td>
-  </tr>
-     <tr>
-    <th>Post</th>
-    <td><input name="post" type="text" class="form-control"required /></td>
-  </tr>
-     <tr>
-    <th>Pin</th>
-    <td><input name="pin" type="text" class="form-control"required  pattern="[0-9]{6}" maxlength="6" /></td>
-  </tr>
-     <tr>
-    <th>District</th>
-    <td><input name="district" type="text"  class="form-control"required/></td>
-  </tr>
-
-  <tr>
-    <th>Photo</th>
-    <td><input name="photo" type="file"  class="form-control"required/></td>
-  </tr>
-     <tr>
-    <th>Photo1</th>
-    <td><input name="photo1" type="file"  class="form-control"required/></td>
-  </tr>
-     <tr>
-    <th>Photo2</th>
-    <td><input name="photo2" type="file" class="form-control"required /></td>
-  </tr>
-  <tr>
-    <th>Details</th>
-    <td>
-      <textarea name="details" id="details" cols="45" rows="5" class="form-control"required></textarea></td>
-  </tr>
+    <table style="width: 100%;">
         <tr>
-        <td>Threat Level </td>
-        <td><input type="radio" name="threatlevel" value="HIGH"  checked/>High (A lookout notice will be issued for public dissemination) <br>
-        <input type="radio" name="threatlevel" value="MODERATE ">Moderate <br>
-        <input type="radio" name="threatlevel" value="LOW">Low<br>
-        </td>
-    </tr>
-  <tr align="center">
-  <td colspan="2"><input name="add" type="submit" value="Add" class="btn btn-info" /></td>
-  </tr>
-</table>
-
-
+            <th style="text-align: left; padding-bottom: 10px;">Name</th>
+            <td><input name="name" type="text" class="form-control" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-bottom: 10px;"><label style="margin-right: 10px;">Gender:</label>
+                <input type="radio" name="gender" value="Male" checked style="margin-right: 5px;">Male
+                <input type="radio" name="gender" value="Female" style="margin-right: 5px;">Female
+                <input type="radio" name="gender" value="Other" style="margin-right: 5px;">Other
+            </td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-bottom: 10px;">Place</th>
+            <td><input name="place" type="text" class="form-control" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;" /></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-bottom: 10px;">Post</th>
+            <td><input name="post" type="text" class="form-control" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;" /></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-bottom: 10px;">Pin</th>
+            <td><input name="pin" type="text" class="form-control" required  pattern="[0-9]{6}" maxlength="6" style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;" /></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-bottom: 10px;">District</th>
+            <td><input name="district" type="text" class="form-control" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;" /></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-bottom: 10px;">Photo</th>
+            <td><input name="photo" type="file" class="form-control" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;" /></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-bottom: 10px;">Photo1</th>
+            <td><input name="photo1" type="file" class="form-control" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;" /></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-bottom: 10px;">Photo2</th>
+            <td><input name="photo2" type="file" class="form-control" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;" /></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-bottom: 10px;">Details</th>
+            <td><textarea name="details" id="details" cols="45" rows="5" class="form-control" required style="padding: 5px; border: 1px solid #ccc; border-radius: 5px; width: 100%; box-sizing: border-box;"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="padding-bottom: 10px;"><label style="margin-right: 10px;">Threat Level:</label>
+                <input type="radio" name="threatlevel" value="HIGH" checked style="margin-right: 5px;">High (A lookout notice will be issued for public dissemination)
+                <input type="radio" name="threatlevel" value="MODERATE" style="margin-right: 5px;">Moderate
+                <input type="radio" name="threatlevel" value="LOW" style="margin-right: 5px;">Low
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input name="add" type="submit" value="Add" class="btn btn-info" style="padding: 8px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;" /></td>
+        </tr>
+    </table>
 </form>
 </body>
 {% endblock %}
