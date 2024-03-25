@@ -30,6 +30,8 @@ urlpatterns = [
     path('send_reply_post/',views.send_reply_post),
     path('send_reply/<id>',views.send_reply),
     path('admin_view_detected_unknown/',views.admin_view_detect_unknown),
+    path('about_us/', views.aboutus),
+    path('p_about_us/', views.p_aboutus),
     #users
     # path('user_add_family_members/',views.user_add_family_members),
     # path('chat/',views.user_chat),

@@ -71,7 +71,6 @@ class SuspiciousActivities(models.Model):
     place= models.CharField(max_length=100)
     time= models.CharField(max_length=100)
     photo= models.CharField(max_length=500)
-    # CRIMINAL= models.ForeignKey(Criminals,on_delete=models.CASCADE)
     activity= models.CharField(max_length=100)
 
 class review(models.Model):
@@ -96,19 +95,7 @@ class family(models.Model):
     phone= models.BigIntegerField()
 
 
-#
-#
-# class detect(models.Model):
-#     date=models.DateField()
-#     time=models.CharField(max_length=100)
-#     image= models.CharField(max_length=500)
-#
-#
-#
-#
-# class detect_sub(models.Model):
-#     CRIMINAL = models.ForeignKey(Criminals, on_delete=models.CASCADE)
-#     DETECT = models.ForeignKey(detect, on_delete=models.CASCADE)
+
 
 
 class detection(models.Model):

@@ -272,10 +272,18 @@ def admin_view_detect_unknown(request):
     else:
         return HttpResponse('''<script>alert('Please login');window.location='/myapp/login/'</script>''')
 
+def aboutus(request):
+        if request.session['lid'] == '':
+            return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+        return render(request, 'ADMIN/aboutus.html')
+
 
 
 #police
-
+def p_aboutus(request):
+    if request.session['lid'] == '':
+        return HttpResponse('''<script>alert("logout....");window.location='/myapp/login/'</script>''')
+    return render(request, 'POLICE/aboutus.html')
 
 
 def police_change_password(request):
